@@ -65,7 +65,7 @@
   }
   /* Animations for all web browsers */
   .animate { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
-}
+
   .modal .card { font-size:75%; }
 
   #countdown { font-family: 'Inconsolata', monospace; font-size:75%;}
@@ -76,8 +76,8 @@
   #v-box, .btn.v { background-color:#E6C88A; }
   #h-box, .btn.h { background-color:#ddb460; }
   #d-box, .btn.d { background-color:#A6B5FF; }
-  #g-box, .btn.g { background-color:#E68A8A; }
-  #b-box, .btn.b { background-color:#8AE68A; }
+  #g-box, .btn.g { background-color:#000000; }
+  #b-box, .btn.b { background-color:#000000; }
   .btn.i { background-color:gold; }
   #v-path, #h-path, #d-path, #g-path, #b-path { padding-left:10px; padding-top:3px; white-space:pre-line; }
   #v-note, #h-note, #d-note, #g-note, #b-note { padding-top:0px; }
@@ -280,39 +280,8 @@
       </div>
       <div class="row mb-2 wrong-btn">
         <div class="btn-group" role="group">
-          <a id="v-wrong" role="button" class="btn v btn-outline-dark rounded-0 py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
-            <span id="v-wrong-text">PATH?</span>
-          </a>
-          <a id="v-enable" role="button" class="btn v hide btn-outline-dark rounded-0 py-0 px-1" onclick="ToggleInstr('#v-');">
-            <span id="b-wrong-text">SHOW</span>
-          </a>
-          <a id="h-wrong" role="button" class="btn h btn-outline-dark py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
-            <span id="h-wrong-text">PATH?</span>
-          </a>
-          <a id="h-enable" role="button" class="btn h hide btn-outline-dark py-0 px-1" onclick="ToggleInstr('#h-');">
-            <span id="b-wrong-text">SHOW</span>
-          </a>
-          <a id="d-wrong" role="button" class="btn d btn-outline-dark py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
-            <span id="d-wrong-text">PATH?</span>
-          </a>
-          <a id="d-enable" role="button" class="btn d hide btn-outline-dark py-0 px-1" onclick="ToggleInstr('#d-');">
-            <span id="b-wrong-text">SHOW</span>
-          </a>
-          <a id="g-wrong" role="button" class="btn g btn-outline-dark py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
-            <span id="g-wrong-text">PATH?</span>
-          </a>
-          <a id="g-enable" role="button" class="btn g hide btn-outline-dark py-0 px-1" onclick="ToggleInstr('#g-');">
-            <span id="b-wrong-text">SHOW</span>
-          </a>
-          <a id="b-wrong" role="button" class="btn b btn-outline-dark rounded-0 py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
-            <span id="b-wrong-text">PATH?</span>
-          </a>
-          <a id="b-enable" role="button" class="btn b hide btn-outline-dark rounded-0 py-0 px-1" onclick="ToggleInstr('#b-');">
-            <span id="b-wrong-text">SHOW</span>
-          </a>
-          <button role="button" class="btn i btn-outline-dark rounded-0 p-0" onclick="ToggleInfo();">
-            <i class="fas fa-info-circle"></i>
-          </button>
+
+     
         </div>
       </div>
       <div id="alert-help" class="alert alert-danger alert-dismissible hide text-center fade show py-1 ps-0 pe-4 mb-2 mx-5" style="font-size:70%;" role="alert">
@@ -320,88 +289,38 @@
         <br>>> <a style="font-weight:bold;" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1zbzBPJK91qbmkRvLm5nF1VLADjcMtU3fJUcolyKQjho/edit?usp=sharing">Read the guides!</a> <<
         <button type="button" class="btn-close p-2" onclick="$('#alert-help').hide();"></button>
       </div>
-      <div id="all-box" class="mt-0">
-        <div id="spot-box" class="col mb-2 p-0 text-center" style="color:gold; font-size:70%; font-family:'Consolas';"></div>
-        <div id="total-box" class="col mb-2 rounded py-1 pr-1">
-          <strong><div id="t-info-title"></div></strong>
-          <div style="font-size:75%;"><span id="t-info-sub"></span></div>
-        </div>
-        <div id="v-box" class="col rounded p-1">
-          <img id="inst-icon" src="img/vox_tp.png" alt="vox_tp.png" onclick="ToggleInstr('#v-');" />
-          <div id="v" class="hide">
-            <span class="i-title">Vocals</span>
-            <div id="v-score" class="badge bg-dark p-1 ms-1"></div>
-            <img id="taps-icon" src="img/cowbell.png" alt="cowbell.png" />
-            <a id="v-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="https://rbpv.online/test"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
-            <div id="v-path"></div>
-            <div id="v-note"><b>Notes: </b><span id="v-note-text"></span></div>
-            <div id="v-brutal"><b>Brutal: </b><span id="v-brutal-note"></span></div>
-          </div>
-          <div id="v-info"><div id="v-info-title"></div></div>
-        </div>
-        <div id="h-box" class="col rounded p-1 mt-2">
-          <img id="inst-icon" src="img/harm_tp.png" alt="harm_tp.png" onclick="ToggleInstr('#h-');"/>
-          <div id="h" class="hide">
-            <span class="i-title">Harmonies</span>
-            <div id="h-score" class="badge bg-dark p-1 ms-1"></div>
-            <a id="h-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
-            <div id="h-path"></div>
-            <div id="h-note"><b>Notes: </b><span id="h-note-text"></span></div>
-          </div>
-          <div id="h-info"><div id="h-info-title"></div></div>
-        </div>
-        <div id="d-box" class="col rounded p-1 mt-2">
-          <img id="inst-icon" src="img/drums_tp.png" alt="drums_tp.png" onclick="ToggleInstr('#d-');" />
-          <div id="d" class="hide">
-            <span class="i-title">Drums</span>
-            <div id="d-score" class="badge bg-dark p-1 ms-1"></div>
-            <div class="badge bg-warning text-dark p-1 ms-1 bre">BRE</div>
-            <a id="d-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
-            <div id="d-path"></div>
-            <div id="d-note"><b>Notes: </b><span id="d-note-text"></span></div>
-          </div>
-          <div id="d-info"><div id="d-info-title"></div></div>
-        </div>
+
         <div id="g-box" class="col rounded p-1 mt-2">
-          <img id="inst-icon" src="img/guitar_tp.png" alt="guitar_tp.png" onclick="ToggleInstr('#g-');"/>
+          <img id="inst-icon" src="img/guitar_tp.png" alt="guitar_tp.png" />
           <div id="g" class="hide">
-            <span class="i-title">Guitar</span>
+            <span class="i-title text-white">Guitar</span> <!-- Add text-white class here -->
+            <div id="g-gs" class="badge bg-warning text-dark p-1 ms-1"></div>
             <div id="g-score" class="badge bg-dark p-1 ms-1"></div>
-            <div class="badge bg-warning text-dark p-1 ms-1 bre">BRE</div>
+            <div class="badge bg-warning text-dark p-1 ms-1 bre text-white">BRE</div> <!-- Add text-white class here -->
             <a id="g-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
-            <div id="g-path"></div>
-            <div id="g-note"><b>Notes: </b><span id="g-note-text"></span></div>
+            <div id="g-path" class="text-white"></div> <!-- Add text-white class here -->
+            <div id="g-note" class="text-white"><b>Notes: </b><span id="g-note-text"></span></div> <!-- Add text-white class here -->
           </div>
           <div id="g-info"><div id="g-info-title"></div></div>
-        </div>
+        </div>        
         <div id="b-box" class="col rounded p-1 mt-2">
-          <img id="inst-icon" src="img/bass_tp.png" alt="bass_tp.png" onclick="ToggleInstr('#b-');"/>
+          <img id="inst-icon" src="img/bass_tp.png" alt="bass_tp.png" />
           <div id="b" class="hide">
-            <span class="i-title">Bass</span>
+            <span class="i-title text-white">Bass</span> <!-- Add text-white class here -->
+            <div id="b-gs" class="badge bg-warning text-dark p-1 ms-1"></div>
             <div id="b-score" class="badge bg-dark p-1 ms-1"></div>
-            <div class="badge bg-warning text-dark p-1 ms-1 bre">BRE</div>
+            <div class="badge bg-warning text-dark p-1 ms-1 bre text-white">BRE</div> <!-- Add text-white class here -->
             <a id="b-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
-            <div id="b-path"></div>
-            <div id="b-note"><b>Notes: </b><span id="b-note-text"></span></div>
+            <div id="b-path" class="text-white"></div> <!-- Add text-white class here -->
+            <div id="b-note" class="text-white"><b>Notes: </b><span id="b-note-text"></span></div> <!-- Add text-white class here -->
           </div>
           <div id="b-info"><div id="b-info-title"></div></div>
+        </div>        
         </div>
       </div>
     </div>
 </section>
 
-<!-- Footer ✔️ -->
-<footer>
-  <div class="container text-center text-light pt-2 pb-1 m-0" style="font-size:50%;">
-    <div class="row p-0 m-0">
-      <div class="col p-0 m-0">
-        <div>Copyright &copy; 2022</div>
-        <div>This site is not affiliated with Harmonix Music Systems, Inc.</div>
-        <div>Database Last Update: <span id="updated"></span></div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 </body>
 </html>

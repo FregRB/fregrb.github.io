@@ -57,9 +57,12 @@ function countdown(date) {
 }
 
 function ShowPathDivs() {
-  $('#v').show();
-  $('#h').show();
-  $('#d').show();
+  $('#v').hide();
+  $('#v').parent().hide(); // Hide the drums section container
+  $('#h').hide();
+  $('#h').parent().hide(); // Hide the drums section container
+  $('#d').hide(); // Hide the drums section content
+  $('#d').parent().hide(); // Hide the drums section container
   $('#g').show();
   $('#b').show();
 
@@ -71,6 +74,7 @@ function ShowPathDivs() {
   $('#g-info').hide();
   $('#b-info').hide();
 }
+
 
 function ToggleInfo() {
   $('#v').toggle();
@@ -238,51 +242,100 @@ function ShowSong(song) {
     $('#d-vid').hide();
   }
 
-  //Guitar
-  $('#g-path').text(song.data.gpath);
-  if (song.data.gnote === "") {
-    $('#g-note').hide();
-  } else {
-    $('#g-note-text').text(song.data.gnote);
-    $('#g-note').show();
-  }
+  
+// Guitar
+var gPathElement = $('#g-path');
+var gNoteElement = $('#g-note');
+var gScoreElement = $('#g-score');
+var gVidElement = $('#g-vid');
+var gGsElement = $('#g-gs'); // New element for displaying g_gs
 
-  if(song.data.gscore !== "0") {
-    $('#g-score').text(song.data.gscore);
-    $('#g-score').show();
-  }else {
-    $('#g-score').hide();
-  }
-  if(song.data.gvid !== "") {
-    $('#g-vid').show();
-    $('#g-vid').attr('href', song.data.gvid);
-  }
-  else {
-    $('#g-vid').hide();
-  }
+// Change color of specific letters
+var gpathHtml = song.data.gpath
+  .replace(/R/g, '<span style="color:red">R</span>')
+  .replace(/Y/g, '<span style="color:yellow">Y</span>')
+  .replace(/B/g, '<span style="color:blue">B</span>')
+  .replace(/O/g, '<span style="color:orange">O</span>')
+  .replace(/G/g, '<span style="color:green">G</span>');
 
-  //Bass
-  $('#b-path').text(song.data.bpath);
-  if (song.data.bnote === "") {
-    $('#b-note').hide();
-  } else {
-    $('#b-note-text').text(song.data.bnote);
-    $('#b-note').show();
-  }
+gPathElement.html(gpathHtml);
 
-  if(song.data.bscore !== "0") {
-    $('#b-score').text(song.data.bscore);
-    $('#b-score').show();
-  }else {
-    $('#b-score').hide();
-  }
-  if(song.data.bvid !== "") {
-    $('#b-vid').show();
-    $('#b-vid').attr('href', song.data.bvid);
-  }
-  else {
-    $('#b-vid').hide();
-  }
+if (song.data.gnote === "") {
+  gNoteElement.hide();
+} else {
+  gNoteElement.text(song.data.gnote);
+  gNoteElement.show();
+}
+
+if (song.data.gscore !== "0") {
+  gScoreElement.text(song.data.gscore);
+  gScoreElement.show();
+} else {
+  gScoreElement.hide();
+}
+
+// Display g_gs
+if (song.data.g_gs !== "") {
+  gGsElement.text(song.data.g_gs);
+  gGsElement.show();
+} else {
+  gGsElement.hide();
+}
+
+if (song.data.gvid !== "") {
+  gVidElement.show();
+  gVidElement.attr('href', song.data.gvid);
+} else {
+  gVidElement.hide();
+}
+
+
+//Bass
+var bPathElement = $('#b-path');
+var bNoteElement = $('#b-note');
+var bScoreElement = $('#b-score');
+var bVidElement = $('#b-vid');
+var bGsElement = $('#b-gs'); // New element for displaying g_gs
+
+
+// Change color of specific letters
+var bpathHtml = song.data.bpath
+  .replaceAll('R', '<span style="color:red">R</span>')
+  .replaceAll('Y', '<span style="color:yellow">Y</span>')
+  .replaceAll('B', '<span style="color:blue">B</span>')
+  .replaceAll('O', '<span style="color:orange">O</span>')
+  .replaceAll('G', '<span style="color:green">G</span>');
+
+bPathElement.html(bpathHtml);
+
+if (song.data.bnote === "") {
+  bNoteElement.hide();
+} else {
+  $('#b-note-text').text(song.data.bnote);
+  bNoteElement.show();
+}
+
+if(song.data.bscore !== "0") {
+  $('#b-score').text(song.data.bscore);
+  bScoreElement.show();
+} else {
+  bScoreElement.hide();
+}
+
+// Display b_gs
+if (song.data.b_gs !== "") {
+  bGsElement.text(song.data.b_gs);
+  bGsElement.show();
+} else {
+  bGsElement.hide();
+}
+
+if(song.data.bvid !== "") {
+  bVidElement.show();
+  $('#b-vid').attr('href', song.data.bvid);
+} else {
+  bVidElement.hide();
+}
 }
 
 function UpdateCheck() {
@@ -357,8 +410,8 @@ function ShowInfo() {
   $('#v-info-title').text('VOCAL PATHS: ' + RBPV.vLength);
   $('#h-info-title').text('HARMONY PATHS: ' + RBPV.hLength);
   $('#d-info-title').text('DRUM PATHS: ' + RBPV.dLength);
-  $('#g-info-title').text('GUITAR PATHS: ' + RBPV.gLength);
-  $('#b-info-title').text('BASS PATHS: ' + RBPV.bLength);
+  $('#g-info-title').text('' + RBPV.gLength);
+  $('#b-info-title').text('' + RBPV.bLength);
   $('#all-box').css('text-align','center');
 }
 
