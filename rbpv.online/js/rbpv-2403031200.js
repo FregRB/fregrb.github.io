@@ -51015,7 +51015,7 @@ var RBPV = {
         b_gs : " 159491",
         bvid : "",
     }},
-{ value : "I'll Be There for You (Theme from "Friends") by The Rembrandts", 
+{ value : "I'll Be There for You (Theme from Friends) by The Rembrandts", 
         data : {
         spotNote : "",
         taps : "False",
@@ -53661,7 +53661,7 @@ var RBPV = {
         b_gs : " 157552",
         bvid : "",
     }},
-{ value : "Metropolis-Part I "The Miracle and the Sleeper" by Dream Theater", 
+{ value : "Metropolis-Part I The Miracle and the Sleeper by Dream Theater", 
         data : {
         spotNote : "",
         taps : "False",
@@ -54282,7 +54282,7 @@ var RBPV = {
         b_gs : " 123025",
         bvid : "",
     }},
-{ value : "My Own Eyes by "Weird Al" Yankovic", 
+{ value : "My Own Eyes by Weird Al Yankovic", 
         data : {
         spotNote : "",
         taps : "False",
@@ -64326,7 +64326,7 @@ var RBPV = {
         b_gs : " 123653",
         bvid : "",
     }},
-{ value : "You're the Best by Joe "Bean" Esposito", 
+{ value : "You're the Best by Joe Bean Esposito", 
         data : {
         spotNote : "",
         taps : "False",
