@@ -338,6 +338,8 @@ if(song.data.bvid !== "") {
 }
 }
 
+
+
 function UpdateCheck() {
   FileExists('/js/rbpv-' + RBPV.currentVersion + '.js');
 }
