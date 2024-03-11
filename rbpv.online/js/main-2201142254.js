@@ -142,7 +142,7 @@ function ShowSong(song) {
   var songName = song.value.replaceAll('🌟', '').trim();
 
   //PATH? buttons
-  var preLink = 'https://docs.google.com/forms/d/e/1FAIpQLSf3QADdWQIGh6ldmUravM86g30Cp2UnxkHSQz7cm_dQvg23OA/viewform?usp=pp_url';
+  var preLink = '';
   preLink += '&entry.435572232=' + encodeURIComponent(songName);
   var vLink = preLink +    '&entry.1257065241=Vocals' + '&entry.924353831=' + encodeURIComponent(0) + '&entry.1966321028=' + encodeURIComponent(song.data.vpath);
   var hLink = preLink + '&entry.1257065241=Harmonies' + '&entry.924353831=' + encodeURIComponent(0) + '&entry.1966321028=' + encodeURIComponent(song.data.hpath);
@@ -405,7 +405,6 @@ function DisplayPathers() {
 
 function ShowInfo() {
   var total = Number(RBPV.vLength) + Number(RBPV.dLength) + Number(RBPV.gLength) + Number(RBPV.bLength) + Number(RBPV.hLength);
-  $('#t-info-title').text('TOTAL PATHS: ' + total);
   $('#t-info-sub').text('SONG COUNT: ' + RBPV.songs.length);
   $('#v-info-title').text('VOCAL PATHS: ' + RBPV.vLength);
   $('#h-info-title').text('HARMONY PATHS: ' + RBPV.hLength);
