@@ -115,6 +115,16 @@
             display: block;
             margin: 0 auto;
         }
+  .gpImage {
+    height: 100%;
+    width: 100%;
+  }
+  @media screen and (max-width: 540px){
+    .gpImage {
+      height: 100%;
+      width: 100%;
+    }
+  }
 </style>
 </head>
 
@@ -357,8 +367,8 @@
 <!-- HTML for Toggle Buttons -->
 <button id="show-g-image-btn">Show Guitar Path Image</button>
 <div style="height: 10px;"></div>
-<div id="g-image-box" class="image-box mx-auto" style="display: none;">
-  <img id="g-image" src="" alt="Guitar Path Image" style="margin: auto;">
+<div id="g-image-box" class="image-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <img id="g-image" src="" alt="Guitar Path Image" style="display:flex;" class="gpImage">
 </div>
 
           </div>
@@ -378,8 +388,8 @@
 <button id="show-b-image-btn">Show Bass Path Image</button>
 <div style="height: 10px;"></div>
 <!-- HTML for Bass Image Box -->
-<div id="b-image-box" style="display: none;">
-  <img id="b-image" src="" alt="Bass Path Image">
+<div id="b-image-box" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <img id="b-image" src="" alt="Bass Path Image" class="gpImage">
 </div>
 
 
