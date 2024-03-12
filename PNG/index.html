@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="DosParkers">
+<meta name="description" content="We have the paths!">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Rock Band Path Vault</title>
+<link rel="icon" type="image/png" href="img/favicon.png">
+
+<!-- Bootstrap 5.1.3 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+<!-- jQuery Autocomplete 1.4.11 -->
+<script type="text/javascript" src="js/jqac-1411-min.js"></script>
+
+<!-- RBPV JavaScript -->
+<script type="text/javascript"  src="js/main-2201142254.js"></script>
+<script type="text/javascript"  src="js/rbpv-2403031200.js"></script>
+<script type="text/javascript"  src="js/diacritic.js"></script>
+<script>
+  $(document).ready(function() {
+      $('#toggle-g-image-btn').click(function() {
+          $('#g-image-box').toggle();
+          var buttonText = $('#g-image-box').is(':visible') ? 'Hide Guitar Path Image' : 'Show Guitar Path Image';
+          $('#toggle-g-image-btn').text(buttonText);
+      });
+
+      $('#toggle-b-image-btn').click(function() {
+          $('#b-image-box').toggle();
+          var buttonText = $('#b-image-box').is(':visible') ? 'Hide Bass Path Image' : 'Show Bass Path Image';
+          $('#toggle-b-image-btn').text(buttonText);
+      });
+  });
+</script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" type="text/css" media="all" href="icons-v6b3/css/all.min.css">
+
+<!-- CSS -->
+<style>
+  @font-face { font-family: 'Rockband'; src: url('font/RockBand2.ttf') format('truetype'); }
+  html { scroll-behavior: smooth;} /* Smooth Animations*/
+  body {
+    padding-right:0px !important;
+    margin-right:0px !important;
+    font-family: 'Abel', sans-serif;
+    font-size:175%;
+    max-width:540px;
+  }
+  body, .modal-content {
+    background-image:url('img/bg.png');
+    background-position:center;
+    background-repeat:repeat;
+  }
+  footer { font-size:70%;}
+  .btn:focus { box-shadow: none; } /*Removes the perm border after a bootstrap button is clicked.*/
+
+  #autocomplete { font-family:'Teko'; font-size:100%;}
+  .autocomplete-selected { background:var(--bs-secondary);} /* Mouse hover suggestion*/
+  .autocomplete-suggestions strong { font-weight: normal; color:var(--bs-light); } /* Highlights */
+  .autocomplete-suggestions {
+    font-family:'Teko';
+    font-size:;
+    color:var(--bs-light);
+    background:var(--bs-dark);
+    cursor: default;
+    overflow: auto;
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    border:1px solid white;
+  }
+  /* Animations for all web browsers */
+  .animate { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+
+  .modal .card { font-size:75%; }
+
+  #countdown { font-family: 'Inconsolata', monospace; font-size:75%;}
+  .badge { font-family:'Rockband'; }
+
+  .utube:hover{ filter: brightness(80%); }
+  .hide {display:none;}
+  #v-box, .btn.v { background-color:#E6C88A; }
+  #h-box, .btn.h { background-color:#ddb460; }
+  #d-box, .btn.d { background-color:#A6B5FF; }
+  #g-box, .btn.g { background-color:#000000; }
+  #b-box, .btn.b { background-color:#000000; }
+  .btn.i { background-color:gold; }
+  #v-path, #h-path, #d-path, #g-path, #b-path { padding-left:10px; padding-top:3px; white-space:pre-line; }
+  #v-note, #h-note, #d-note, #g-note, #b-note { padding-top:0px; }
+  #v-info, #h-info, #d-info, #g-info, #b-info { font-weight:bold; }
+  /*#v-score, #h-score, #d-score, #g-score, #b-score { position:relative; float:right; }*/
+  #v-brutal { font-size:85%; }
+  .i-title { text-decoration:underline; font-weight:bold; }
+  #total-box { background-color:#FACC2E; padding-left:38px; }
+  #inst-icon { height:40px; width:auto; display:block; left:-2px; top:-2px; float:left; position:relative; }
+  .wrong-btn span { font-weight: bold;}
+  .wrong-icon { height:24px; top:0px; }
+  .tier-icons img { height:20px; top:-1px; position:relative;}
+  .tier-icons {font-size:60%;}
+  #taps-icon { height:30px; width:auto; }
+  .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            display: block;
+            margin: 0 auto;
+        }
+</style>
+</head>
+
+<body id="body" class="animate mx-auto">
+
+<!-- WALL OF PATHERS (Modal)  -->
+<div id="modalPathers" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-light text-center">
+      <div class="modal-header my-0 p-2">
+        <button type="button" class="btn btn-dark btn-sm mx-auto w-100" data-bs-dismiss="modal">Close</button>
+      </div>
+      <h2 style="font-family:'Rockband';" class="px-2 pt-3">WALL OF PATHERS</h2>
+      <div class="tier-icons px-3 pt-0 pb-1">
+        <img src="img/tiers/bloodstone.png" class="me-1"><span style="color:IndianRed;">250</span>
+        <img src="img/tiers/diamond.png" class="mx-1"><span style="color:#A4DDED;">150</span>
+        <img src="img/tiers/plat.png" class="mx-1"><span style="color:#E5E4E2;">100</span>
+        <img src="img/tiers/gold.png" class="mx-1"><span style="color:Gold;">50</span>
+        <img src="img/tiers/silver.png" class="mx-1"><span style="color:Silver;">25</span>
+        <img src="img/tiers/bronze.png" class="mx-1"><span style="color:Peru;">10</span>
+      </div>
+      <div class="modal-body py-2 px-0" id="pathersModalBody" style="font-size:45%;">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CREDITS (Modal) ✔️ -->
+<div id="creditsModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-light text-center">
+      <div class="modal-header my-0 p-2">
+        <button type="button" class="btn btn-dark btn-sm mx-auto w-100" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+      <div class="modal-body px-3 py-2">
+        <h3 class="mb-0">THIS IS A PRIVATE BUILD NOT INTENDED FOR PUBLIC USE</h2>
+        <h3 class="mb-0">Rock Band Path Vault</h2>
+        <h5 class="mb-2">is made possible by</h5>
+        <div class="row">
+          <div class="col mx-0 px-0">
+            <div style="font-size:120%; color:forestgreen;">DosParkers <i class="fab fa-xbox fa-xs"></i></div>
+            <div style="font-size:70%;">with help from</div>
+            <div style="font-size:110%;">
+              <div><a href="http://alecmori.com/" target="_blank" rel="noopener noreferrer">Alec Mori <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div><a href="http://ipather.tmullin.net/" target="_blank" rel="noopener noreferrer">iPather <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div><a href="https://rockband.scorehero.com" target="_blank" rel="noopener noreferrer">ScoreHero <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+              <div><a href="https://rbdb.online/" target="_blank" rel="noopener noreferrer">RBDB <i class="fas fa-external-link-alt fa-xs"></i></a></div>
+            </div>
+            <div style="font-size:70%;">and</div>
+            <div style="font-size:110%;color:forestgreen;">TheAngryChancla <i class="fab fa-xbox fa-xs"></i></div>
+            <div style="font-size:110%;color:forestgreen;">Big HIGGINS <i class="fab fa-xbox fa-xs"></i></div>
+            <div style="font-size:110%;color:forestgreen;">FestivePegasus5 <i class="fab fa-xbox fa-xs"></i></div>
+            <div style="font-size:110%;color:forestgreen;">Curs06 <i class="fab fa-xbox fa-xs"></i></div>
+          </div>
+          <div class="col mx-0 px-0">
+            <div id="patreon1" style="color:gold; font-size:80%;" class="my-0"></div>
+            <div id="patreon2" style="color:silver; font-size:80%;" class="my-0"></div>
+            <div id="patreon3" style="color:peru; font-size:80%;" class="my-0"></div>
+            <div style="font-size:110%;color:rgb(255, 255, 255);">Tools Used: <i class=""></i></div>
+            <div style="font-size:110%;color:rgb(119, 0, 255);">Onyx <i class=""></i></div>
+            <div style="font-size:110%;color:rgb(0, 64, 255);">CHOpt <i class=""></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WHATS NEW (Modal) ✔️ -->
+<div id="modalNew" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-dialog-scrollable" role="document">
+    <div class="modal-content text-light text-center">
+      <div class="modal-body p-2">
+        <div class="accordion">
+          <div class="card bg-dark">
+            <div class="card-header p-0">
+                <button class="btn btn-sm btn-dark btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRoadmap">
+                  Roadmap
+                </button>
+            </div>
+            <div id="collapseRoadmap" class="collapse">
+              <div class="card-body text-left p-2">
+                <div><i class="fas fa-star-of-life me-1"></i>Daily vault updates.</div>
+                <div><i class="fas fa-star-of-life me-1"></i>BRE indicator.</div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Vocal taps indicator (bottom right icon).</s></div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Video links for limited songs.</s></div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Site redesign / restructure.</s></div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Improved song search.</s></div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Harmony paths.</s></div>
+                <div><s><i class="fas fa-star-of-life me-1"></i>Individual remove buttons on setlist songs.</s></div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <div class="card-header p-0">
+                <button class="btn btn-sm btn-dark btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  FAQ
+                </button>
+            </div>
+            <div id="collapseOne" class="collapse">
+              <div class="card-body text-left p-2">
+                <div class=""><i class="fas fa-caret-right pr-1"></i>The timer is used for Rival weeks.</div>
+                <div class="pt-1"><i class="fas fa-caret-right pr-1"></i>The<i class="fas fa-stream px-1"></i>button can be used to create a setlist.</div>
+                <div class="pt-1"><i class="fas fa-caret-right pr-1"></i>The<i class="fas fa-bars px-1"></i>button will bring up a menu.</div>
+                <div class="pt-1"><i class="fas fa-caret-right pr-1"></i>This site is by the community, for the community. Credits for individual paths are not given. There is a banner near the top that will display weekly submissions to the vault. The credits listed on this site are only for the creation and maintaining of the entire website.</div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark">
+            <div class="card-header p-0">
+                <button class="btn btn-sm btn-dark btn-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  Using an adblocker?
+                </button>
+            </div>
+            <div id="collapseTwo" class="collapse">
+              <div class="card-body text-left p-2">
+                <div>This website has <strong>no ads</strong> on it.</div>
+                <div>Some adblockers may block some fonts and styles.</div>
+                <div class="pt-1">The main domain is now officially: <strong>https://rbpv.online/</strong></div>
+                <div>All this is made possible thanks to funding from patrons.</div>
+                <div><i class="fab fa-patreon pr-1"></i><a href="https://www.patreon.com/rbpv" target="_blank" rel="noopener noreferrer">https://www.patreon.com/rbpv</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer m-0 p-2">
+        <button type="button" class="btn btn-dark btn-sm btn-block m-0 p-0" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TWITTER (Modal) -->
+<div id="modal-news" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content text-light text-center">
+      <div class="modal-header my-0 p-2">
+        <button type="button" class="btn btn-dark btn-sm mx-auto w-100" data-bs-dismiss="modal">CLOSE</button>
+      </div>
+        <div class="modal-body p-2" style="font-size:;">
+          <a class="twitter-timeline" data-tweet-limit=10 data-width="100%" data-height="500" data-dnt="true" data-theme="dark" data-link-color="#2B7BB9" href="https://twitter.com/RockBand?ref_src=twsrc%5Etfw">Tweets by RockBand</a>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Finish looking at all-box div -->
+<section id="top" class="page-section">
+  <div id="page-main" class="container-fluid p-2">
+
+        <div class="row mb-1">
+          <div class="btn-group " role="group">
+            <div class="btn-group dropleft" role="group">
+              <button id="menuButton" type="button" class="btn btn-sm btn-dark" data-bs-toggle="dropdown"><i class="fas fa-bars"></i></button>
+              <div id="menu" class="dropdown-menu bg-dark" style="border:1px solid white;">
+                <a role="button" class="dropdown-item text-light bg-dark" target="_blank" rel="noopener noreferrer" href="https://discord.gg/7jEwsKF"><i class="fab fa-discord"></i><span style="position:fixed; left:42px;">DISCORD</span></a>
+                <button type="button" class="dropdown-item text-light bg-dark" data-bs-toggle="modal" data-bs-target="#modal-news"><i class="fab fa-twitter"></i><span style="position:fixed; left:42px;">NEWS</span></button>
+                <button type="button" class="dropdown-item text-light bg-dark" data-bs-toggle="modal" data-bs-target="#creditsModal"><i class="fab fa-patreon"></i><span style="position:fixed; left:42px;">CREDITS</span></button>
+                <!--<button type="button" class="dropdown-item text-light bg-dark" data-bs-toggle="modal" data-bs-target="#modalNew"><i class="fas fa-user-tie"></i><span style="position:fixed; left:42px;">Whats New?</span></button>-->
+                <button type="button" class="dropdown-item text-light bg-dark" data-bs-toggle="modal" data-bs-target="#modalPathers"><i class="fas fa-users"></i><span style="position:fixed; left:42px;">WALL</span></button>
+                <button type="button" class="dropdown-item text-light bg-dark" onclick="$('#alert-help').show();"><i class="fas fa-question-circle"></i><span style="position:fixed; left:42px;">HELP</span></button>
+              </div>
+            <div id="countdown" class="badge bg-dark ms-1 pt-2"></div>
+            <button id="setlistButton" class="btn btn-dark btn-sm ms-1" type="button" data-bs-toggle="collapse" data-bs-target="#setlist"><i class="fas fa-stream"></i></button>
+            <button id="setlist" class="btn btn-success btn-sm collapse p-1" onclick="SetlistAdd()" type="button"><i class="fas fa-plus p-0" style="color:var(--dark)"></i></button>
+            </div>
+            
+            <div class="w-100 mx-2 my-auto">
+              <img id="title" class="mx-auto my-auto" src="img/title_half.png" alt="title_half.png" style="max-width:100%; max-height:36px; display:flex;" />
+            </div>
+          </div>
+        </div>
+      <div class="row mx-0 mb-2">
+          <input id="autocomplete" placeholder="Search title or artist..." type="text" spellcheck="false" class="form-control form-control-sm bg-dark text-light text-center pb-0" onclick="SelectAll('autocomplete');">
+      </div>
+      <div id="setlist" class="collapse rounded my-0 p-1 bg-dark">
+        <div class="row w-100 mx-0 p-1 justify-content-center text-center" style="font-size:70%;">
+          <div class="col rounded p-0">
+            <div id="set1" class="list-group"></div>
+          </div>
+          <div class="col rounded p-0" >
+            <div id="set2" class="list-group"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-2 wrong-btn">
+        <div class="btn-group" role="group">
+
+     
+        </div>
+        <div class="row mb-2 wrong-btn">
+          <div class="btn-group" role="group">
+
+            <a id="g-wrong" role="button" class="btn g btn-outline-dark py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
+              <span id="g-wrong-text">GUITAR</span>
+            </a>
+            <a id="g-enable" role="button" class="btn g hide btn-outline-dark py-0 px-1" onclick="ToggleInstr('#g-');">
+              <span id="b-wrong-text">SHOW GUITAR</span>
+            </a>
+            <a id="b-wrong" role="button" class="btn b btn-outline-dark rounded-0 py-0 px-1" target="_blank" rel="noopener noreferrer" href="index.html">
+              <span id="b-wrong-text">BASS</span>
+            </a>
+            <a id="b-enable" role="button" class="btn b hide btn-outline-dark rounded-0 py-0 px-1" onclick="ToggleInstr('#b-');">
+              <span id="b-wrong-text">SHOW BASS</span>
+            </a>
+            <button role="button" class="btn i btn-outline-dark rounded-0 p-0" onclick="ToggleInfo();">
+              <i class="fas fa-info-circle"></i>
+            </button>
+            
+
+      </div>
+      <div id="alert-help" class="alert alert-danger alert-dismissible hide text-center fade show py-1 ps-0 pe-4 mb-2 mx-5" style="font-size:70%;" role="alert">
+        Don't know how to read paths?
+        <br>>> <a style="font-weight:bold;" target="_blank" rel="noopener noreferrer" href="https://docs.google.com/spreadsheets/d/1zbzBPJK91qbmkRvLm5nF1VLADjcMtU3fJUcolyKQjho/edit?usp=sharing">Read the guides!</a> <<
+        <button type="button" class="btn-close p-2" onclick="$('#alert-help').hide();"></button>
+      </div>
+      
+      <div id="all-box" class="mt-0">
+        <div id="spot-box" class="col mb-2 p-0 text-center" style="color:gold; font-size:70%; font-family:'Consolas';"></div>
+        <div id="total-box" class="col mb-2 rounded py-1 pr-1">
+          <strong><div id="t-info-title"></div></strong>
+          <div style="font-size:75%;"><span id="t-info-sub"></span></div>
+        </div>
+        <div id="g-box" class="col rounded p-1 mt-2">
+          <img id="inst-icon" src="img/guitar_tp.png" alt="guitar_tp.png" onclick="ToggleInstr('#g-');"/>
+          <div id="g" class="hide">
+            <span class="i-title text-white">Guitar</span> <!-- Add text-white class here -->
+            <div id="g-gs" class="badge bg-warning text-dark p-1 ms-1"></div>
+            <div id="g-score" class="badge bg-dark p-1 ms-1"></div>
+            <div class="badge bg-warning text-dark p-1 ms-1 bre text-white">BRE</div> <!-- Add text-white class here -->
+            <a id="g-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
+            <div id="g-path" class="text-white"></div> <!-- Add text-white class here -->
+            <div id="g-note" class="text-white"><b>Notes: </b><span id="g-note-text"></span></div> <!-- Add text-white class here -->
+            <div style="height: 25px;"></div>
+
+            <!-- HTML for Guitar Image Box -->
+<!-- HTML for Toggle Buttons -->
+<button id="show-g-image-btn">Show Guitar Path Image</button>
+<div style="height: 10px;"></div>
+<div id="g-image-box" class="image-box mx-auto" style="display: none;">
+  <img id="g-image" src="" alt="Guitar Path Image" style="margin: auto;">
+</div>
+
+          </div>
+          <div id="g-info"><div id="g-info-title"></div></div>
+        </div>        
+        <div id="b-box" class="col rounded p-1 mt-2">
+          <img id="inst-icon" src="img/bass_tp.png" alt="bass_tp.png" onclick="ToggleInstr('#b-');"/>
+          <div id="b" class="hide">
+            <span class="i-title text-white">Bass</span> <!-- Add text-white class here -->
+            <div id="b-gs" class="badge bg-warning text-dark p-1 ms-1"></div>
+            <div id="b-score" class="badge bg-dark p-1 ms-1"></div>
+            <div class="badge bg-warning text-dark p-1 ms-1 bre text-white">BRE</div> <!-- Add text-white class here -->
+            <a id="b-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
+            <div id="b-path" class="text-white"></div> <!-- Add text-white class here -->
+            <div id="b-note" class="text-white"><b>Notes: </b><span id="b-note-text"></span></div> <!-- Add text-white class here -->
+            <div style="height: 25px;"></div>
+<button id="show-b-image-btn">Show Bass Path Image</button>
+<div style="height: 10px;"></div>
+<!-- HTML for Bass Image Box -->
+<div id="b-image-box" style="display: none;">
+  <img id="b-image" src="" alt="Bass Path Image">
+</div>
+
+
+
+          <div id="b-info"><div id="b-info-title"></div></div>
+        </div>        
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
