@@ -76,6 +76,7 @@ function ShowPathDivs() {
 }
 
 
+
 function ToggleInfo() {
   $('#v').toggle();
   $('#h').toggle();
@@ -199,6 +200,45 @@ function ShowSong(song) {
     $('#v-brutal').hide();
   }
 
+
+
+  // Hide Guitar Path Image
+  $('#g-image-box').hide();
+  
+  // Hide Bass Path Image
+  $('#b-image-box').hide();
+
+  // Set image sources
+  var gImagePath = 'js/paths/' + song.data.g_image.replace(/'/g, ''); // Adjusted path
+  $('#g-image').attr('src', gImagePath);
+
+  var bImagePath = 'js/paths/' + song.data.b_image.replace(/'/g, ''); // Adjusted path
+  $('#b-image').attr('src', bImagePath);
+
+  // Event listener for toggling visibility of guitar image box
+  $('#show-g-image-btn').click(function() {
+    $('#g-image-box').toggle();
+    var btnText = $('#show-g-image-btn').text();
+    if (btnText === 'Show Guitar Path Image') {
+      $('#show-g-image-btn').text('Hide Guitar Path Image');
+    } else {
+      $('#show-g-image-btn').text('Show Guitar Path Image');
+    }
+  });
+
+  // Event listener for toggling visibility of bass image box
+  $('#show-b-image-btn').click(function() {
+    $('#b-image-box').toggle();
+    var btnText = $('#show-b-image-btn').text();
+    if (btnText === 'Show Bass Path Image') {
+      $('#show-b-image-btn').text('Hide Bass Path Image');
+    } else {
+      $('#show-b-image-btn').text('Show Bass Path Image');
+    }
+  });
+
+  // Other existing code...
+  
   //Harm
   if (song.data.hpath === "") {
     $('#h-path').text('No path yet. 😔');

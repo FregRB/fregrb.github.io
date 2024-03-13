@@ -20,7 +20,21 @@
 <script type="text/javascript"  src="js/main-2201142254.js"></script>
 <script type="text/javascript"  src="js/rbpv-2403031200.js"></script>
 <script type="text/javascript"  src="js/diacritic.js"></script>
+<script>
+  $(document).ready(function() {
+      $('#toggle-g-image-btn').click(function() {
+          $('#g-image-box').toggle();
+          var buttonText = $('#g-image-box').is(':visible') ? 'Hide Guitar Path Image' : 'Show Guitar Path Image';
+          $('#toggle-g-image-btn').text(buttonText);
+      });
 
+      $('#toggle-b-image-btn').click(function() {
+          $('#b-image-box').toggle();
+          var buttonText = $('#b-image-box').is(':visible') ? 'Hide Bass Path Image' : 'Show Bass Path Image';
+          $('#toggle-b-image-btn').text(buttonText);
+      });
+  });
+</script>
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
@@ -93,6 +107,24 @@
   .tier-icons img { height:20px; top:-1px; position:relative;}
   .tier-icons {font-size:60%;}
   #taps-icon { height:30px; width:auto; }
+  .image-box {
+            text-align: center;
+        }
+
+        .image-box img {
+            display: block;
+            margin: 0 auto;
+        }
+  .gpImage {
+    height: 100%;
+    width: 100%;
+  }
+  @media screen and (max-width: 540px){
+    .gpImage {
+      height: 100%;
+      width: 100%;
+    }
+  }
 </style>
 </head>
 
@@ -304,7 +336,8 @@
             <button role="button" class="btn i btn-outline-dark rounded-0 p-0" onclick="ToggleInfo();">
               <i class="fas fa-info-circle"></i>
             </button>
-          </div>
+            
+
       </div>
       <div id="alert-help" class="alert alert-danger alert-dismissible hide text-center fade show py-1 ps-0 pe-4 mb-2 mx-5" style="font-size:70%;" role="alert">
         Don't know how to read paths?
@@ -328,6 +361,16 @@
             <a id="g-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
             <div id="g-path" class="text-white"></div> <!-- Add text-white class here -->
             <div id="g-note" class="text-white"><b>Notes: </b><span id="g-note-text"></span></div> <!-- Add text-white class here -->
+            <div style="height: 25px;"></div>
+
+            <!-- HTML for Guitar Image Box -->
+<!-- HTML for Toggle Buttons -->
+<button id="show-g-image-btn">Show Guitar Path Image</button>
+<div style="height: 10px;"></div>
+<div id="g-image-box" class="image-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <img id="g-image" src="" alt="Guitar Path Image" style="display:flex;" class="gpImage">
+</div>
+
           </div>
           <div id="g-info"><div id="g-info-title"></div></div>
         </div>        
@@ -341,13 +384,23 @@
             <a id="b-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
             <div id="b-path" class="text-white"></div> <!-- Add text-white class here -->
             <div id="b-note" class="text-white"><b>Notes: </b><span id="b-note-text"></span></div> <!-- Add text-white class here -->
-          </div>
+            <div style="height: 25px;"></div>
+<button id="show-b-image-btn">Show Bass Path Image</button>
+<div style="height: 10px;"></div>
+<!-- HTML for Bass Image Box -->
+<div id="b-image-box" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <img id="b-image" src="" alt="Bass Path Image" class="gpImage">
+</div>
+
+
+
           <div id="b-info"><div id="b-info-title"></div></div>
         </div>        
         </div>
       </div>
     </div>
 </section>
+
 
 
 </body>
