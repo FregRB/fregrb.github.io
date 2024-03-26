@@ -114,6 +114,22 @@ $(document).ready(function (){
     $('#countdown').html(setRivals());
   }, 100);
 
+  // Sort the songs array alphabetically by the song value
+  RBPV.songs.sort(function(a, b) {
+    var songA = a.value.toUpperCase();
+    var songB = b.value.toUpperCase();
+    if (songA < songB) {
+      return -1;
+    }
+    if (songA > songB) {
+      return 1;
+    }
+    return 0;
+  });
+
+  // Render the sorted song list
+  ShowSongList();
+
   // --Create autocomplete function
   $('#autocomplete').autocomplete({
     lookup: RBPV.songs,
@@ -127,6 +143,16 @@ $(document).ready(function (){
     },
   });
 });
+
+function ShowSongList() {
+  // Clear the existing song list
+  $('#song-list').empty();
+
+  // Iterate over the sorted songs array and append each song to the list
+  RBPV.songs.forEach(function(song) {
+    $('#song-list').append('<li>' + song.value + '</li>');
+  });
+}
 
 function ShowSong(song) {
   ShowPathDivs();
@@ -200,45 +226,8 @@ function ShowSong(song) {
     $('#v-brutal').hide();
   }
 
-
-
-  // Hide Guitar Path Image
-  $('#g-image-box').hide();
-  
-  // Hide Bass Path Image
-  $('#b-image-box').hide();
-
-  // Set image sources
-  var gImagePath = 'js/paths/' + song.data.g_image.replace(/'/g, ''); // Adjusted path
-  $('#g-image').attr('src', gImagePath);
-
-  var bImagePath = 'js/paths/' + song.data.b_image.replace(/'/g, ''); // Adjusted path
-  $('#b-image').attr('src', bImagePath);
-
-  // Event listener for toggling visibility of guitar image box
-  $('#show-g-image-btn').click(function() {
-    $('#g-image-box').toggle();
-    var btnText = $('#show-g-image-btn').text();
-    if (btnText === 'Show Guitar Path Image') {
-      $('#show-g-image-btn').text('Hide Guitar Path Image');
-    } else {
-      $('#show-g-image-btn').text('Show Guitar Path Image');
-    }
-  });
-
-  // Event listener for toggling visibility of bass image box
-  $('#show-b-image-btn').click(function() {
-    $('#b-image-box').toggle();
-    var btnText = $('#show-b-image-btn').text();
-    if (btnText === 'Show Bass Path Image') {
-      $('#show-b-image-btn').text('Hide Bass Path Image');
-    } else {
-      $('#show-b-image-btn').text('Show Bass Path Image');
-    }
-  });
-
   // Other existing code...
-  
+
   //Harm
   if (song.data.hpath === "") {
     $('#h-path').text('No path yet. 😔');
@@ -282,14 +271,12 @@ function ShowSong(song) {
     $('#d-vid').hide();
   }
 
-  
-// Guitar
-var gPathElement = $('#g-path');
-var gNoteElement = $('#g-note');
-var gScoreElement = $('#g-score');
-var gVidElement = $('#g-vid');
-var gGsElement = $('#g-gs'); // New element for displaying g_gs
-
+  // Guitar
+  var gPathElement = $('#g-path');
+  var gNoteElement = $('#g-note');
+  var gScoreElement = $('#g-score');
+  var gVidElement = $('#g-vid');
+  var gGsElement = $('#g-gs'); // New element for displaying g_gs
 // Change color of specific letters
 var gpathHtml = song.data.gpath
   .replace(/R/g, '<span style="color:red">R</span>')
