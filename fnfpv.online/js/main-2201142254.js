@@ -414,12 +414,12 @@ dPathElement.html(dpathHtml);
 if (song.data.gnote === "") {
   dNoteElement.hide();
 } else {
-  dNoteElement.text(song.data.gnote);
+  dNoteElement.text(song.data.dnote);
   dNoteElement.show();
 }
 
 if (song.data.dscore !== "0") {
-  dScoreElement.text(song.data.gscore);
+  dScoreElement.text(song.data.dscore);
   dScoreElement.show();
 } else {
   dScoreElement.hide();
