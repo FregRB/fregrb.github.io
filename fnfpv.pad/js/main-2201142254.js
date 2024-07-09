@@ -187,6 +187,10 @@ function ShowSong(song) {
 
   song.data.gpath = song.data.gpath.replace(/,/g, "\n");
   song.data.bpath = song.data.bpath.replace(/,/g, "\n");
+  song.data.dpath = song.data.dpath.replace(/,/g, "\n");
+  song.data.vpath = song.data.vpath.replace(/,/g, "\n");
+
+
 
   //BRE
   if(song.data.bre.toLowerCase() == "true") {
@@ -249,8 +253,8 @@ function ShowSong(song) {
  var dImagePath = 'js/paths/' + song.data.d_image.replace(/'/g, ''); // Adjusted path
  $('#d-image').attr('src', dImagePath);
 
- var dImagePath = 'js/paths/' + song.data.d_image.replace(/'/g, ''); // Adjusted path
- $('#v-image').attr('src', dImagePath);
+ var vImagePath = 'js/paths/' + song.data.v_image.replace(/'/g, ''); // Adjusted path
+ $('#v-image').attr('src', vImagePath);
 
  // Event listener for toggling visibility of guitar image box
  $('#show-g-image-btn').click(function() {
@@ -413,14 +417,14 @@ if(song.data.bvid !== "") {
 } else {
   bVidElement.hide();
 }
-  // Druns
+  // Drumss
   var dPathElement = $('#d-path');
   var dNoteElement = $('#d-note');
   var dScoreElement = $('#d-score');
   var dVidElement = $('#d-vid');
   var dGsElement = $('#d-gs'); // New element for displaying d_gs
 // Change color of specific letters
-var dpathHtml = song.data.gpath
+var dpathHtml = song.data.dpath
   .replace(/R/g, '<span style="color:red">R</span>')
   .replace(/Y/g, '<span style="color:yellow">Y</span>')
   .replace(/B/g, '<span style="color:blue">B</span>')
@@ -464,14 +468,14 @@ if (song.data.gdid !== "") {
  var vVidElement = $('#v-vid');
  var vGsElement = $('#v-gs'); // New element for displaying g_gs
 // Change color of specific letters
-var gpathHtml = song.data.gpath
+var vpathHtml = song.data.vpath
  .replace(/R/g, '<span style="color:red">R</span>')
  .replace(/Y/g, '<span style="color:yellow">Y</span>')
  .replace(/B/g, '<span style="color:blue">B</span>')
  .replace(/O/g, '<span style="color:orange">O</span>')
  .replace(/G/g, '<span style="color:green">G</span>');
 
-vPathElement.html(gpathHtml);
+vPathElement.html(vpathHtml);
 
 if (song.data.gnote === "") {
  vNoteElement.hide();
@@ -480,8 +484,8 @@ if (song.data.gnote === "") {
  vNoteElement.show();
 }
 
-if (song.data.gscore !== "0") {
- vScoreElement.text(song.data.gscore);
+if (song.data.vscore !== "0") {
+ vScoreElement.text(song.data.vscore);
  vScoreElement.show();
 } else {
  vScoreElement.hide();
