@@ -17,9 +17,9 @@
 <script type="text/javascript" src="js/jqac-1411-min.js"></script>
 
 <!-- RBPV JavaScript -->
-<script type="text/javascript"  src="js/main-2201142254.js"></script>
-<script type="text/javascript"  src="js/rbpv-2403031200.js"></script>
-<script type="text/javascript"  src="js/diacritic.js"></script>
+<script type="text/javascript" src="js/main-2201142254.js"></script>
+<script type="text/javascript" src="js/rbpv-2403031200.js"></script>
+<script type="text/javascript" src="js/diacritic.js"></script>
 <script>
   $(document).ready(function() {
       $('#toggle-g-image-btn').click(function() {
@@ -57,87 +57,243 @@
 
 <!-- CSS -->
 <style>
-  @font-face { font-family: 'Rockband'; src: url('font/RockBand2.ttf') format('truetype'); }
-  html { scroll-behavior: smooth;} /* Smooth Animations*/
+  @font-face {
+    font-family: 'Rockband';
+    src: url('font/RockBand2.ttf') format('truetype');
+  }
+  
+  html {
+    scroll-behavior: smooth; /* Smooth Animations */
+  }
+  
   body {
-    padding-right:0px !important;
-    margin-right:0px !important;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
     font-family: 'Abel', sans-serif;
-    font-size:175%;
-    max-width:600px;
+    font-size: 175%;
+    max-width: 600px;
   }
+  
   body, .modal-content {
-    background-image:url('img/bg.png');
-    background-position:center;
-    background-repeat:repeat;
+    background-image: url('img/bg.png');
+    background-position: center;
+    background-repeat: repeat;
   }
-  footer { font-size:70%;}
-  .btn:focus { box-shadow: none; } /*Removes the perm border after a bootstrap button is clicked.*/
+  
+  footer {
+    font-size: 70%;
+  }
+  
+  .btn:focus {
+    box-shadow: none; /* Removes the perm border after a bootstrap button is clicked. */
+  }
 
-  #autocomplete { font-family:'Teko'; font-size:100%;}
-  .autocomplete-selected { background:var(--bs-secondary);} /* Mouse hover suggestion*/
-  .autocomplete-suggestions strong { font-weight: normal; color:var(--bs-light); } /* Highlights */
+  #autocomplete {
+    font-family: 'Teko';
+    font-size: 100%;
+  }
+
+  .autocomplete-selected {
+    background: var(--bs-secondary); /* Mouse hover suggestion */
+  }
+
   .autocomplete-suggestions {
-    font-family:'Teko';
-    font-size:;
-    color:var(--bs-light);
-    background:var(--bs-dark);
+    font-family: 'Teko';
+    font-size: 100%; /* Ensure a proper font size */
+    color: var(--bs-light);
+    background: var(--bs-dark);
     cursor: default;
     overflow: auto;
     text-align: center;
     padding-left: 2px;
     padding-right: 2px;
-    border:1px solid white;
+    border: 1px solid white;
   }
+
   /* Animations for all web browsers */
-  .animate { -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; transition: all 0.3s ease-in-out; }
+  .animate {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
 
-  .modal .card { font-size:75%; }
+  .modal .card {
+    font-size: 75%;
+  }
 
-  #countdown { font-family: 'Inconsolata', monospace; font-size:75%;}
-  .badge { font-family:'Rockband'; }
+  #countdown {
+    font-family: 'Inconsolata', monospace;
+    font-size: 75%;
+  }
 
-  .utube:hover{ filter: brightness(80%); }
-  .hide {display:none;}
-  #v-box, .btn.v { background-color:#E6C88A; }
-  #h-box, .btn.h { background-color:#ddb460; }
-  #d-box, .btn.d { background-color:#A6B5FF; }
-  #g-box, .btn.g { background-color:#000000; }
-  #b-box, .btn.b { background-color:#000000; }
-  .btn.i { background-color:gold; }
-  #v-path, #h-path, #d-path, #g-path, #b-path { padding-left:10px; padding-top:3px; white-space:pre-line; }
-  #v-note, #h-note, #d-note, #g-note, #b-note { padding-top:0px; }
-  #v-info, #h-info, #d-info, #g-info, #b-info { font-weight:bold; }
-  /*#v-score, #h-score, #d-score, #g-score, #b-score { position:relative; float:right; }*/
-  #v-brutal { font-size:85%; }
-  .i-title { text-decoration:underline; font-weight:bold; }
-  #total-box { background-color:#FACC2E; padding-left:38px; }
-  #inst-icon { height:40px; width:auto; display:block; left:-2px; top:-2px; float:left; position:relative; }
-  .wrong-btn span { font-weight: bold;}
-  .wrong-icon { height:24px; top:0px; }
-  .tier-icons img { height:20px; top:-1px; position:relative;}
-  .tier-icons {font-size:60%;}
-  #taps-icon { height:30px; width:auto; }
+  .badge {
+    font-family: 'Rockband';
+  }
+
+  .utube:hover {
+    filter: brightness(80%);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #v-box, .btn.v {
+    background-color: #E6C88A;
+  }
+
+  #h-box, .btn.h {
+    background-color: #ddb460;
+  }
+
+  #d-box, .btn.d {
+    background-color: #A6B5FF;
+  }
+
+  #g-box, .btn.g, #b-box, .btn.b {
+    background-color: #000000;
+  }
+
+  .btn.i {
+    background-color: gold;
+  }
+
+  #v-path, #h-path, #d-path, #g-path, #b-path {
+    padding-left: 10px;
+    padding-top: 3px;
+    white-space: pre-line;
+  }
+
+  #v-note, #h-note, #d-note, #g-note, #b-note {
+    padding-top: 0px;
+  }
+
+  #v-info, #h-info, #d-info, #g-info, #b-info {
+    font-weight: bold;
+  }
+
+  #v-brutal {
+    font-size: 85%;
+  }
+
+  .i-title {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  #total-box {
+    background-color: #FACC2E;
+    padding-left: 38px;
+  }
+
+  #inst-icon {
+    height: 40px;
+    width: auto;
+    display: block;
+    left: -2px;
+    top: -2px;
+    float: left;
+    position: relative;
+  }
+
+  .wrong-btn span {
+    font-weight: bold;
+  }
+
+  .wrong-icon {
+    height: 24px;
+    top: 0px;
+  }
+
+  .tier-icons img {
+    height: 20px;
+    top: -1px;
+    position: relative;
+  }
+
+  .tier-icons {
+    font-size: 60%;
+  }
+
+  #taps-icon {
+    height: 30px;
+    width: auto;
+  }
+
   .image-box {
-            text-align: center;
-        }
+    text-align: center;
+  }
 
-        .image-box img {
-            display: block;
-            margin: 0 auto;
-        }
+  .image-box img {
+    display: block;
+    margin: 0 auto;
+  }
+
   .gpImage {
     height: 100%;
     width: 100%;
   }
-  @media screen and (max-width: 540px){
+
+  @media screen and (max-width: 540px) {
     .gpImage {
       height: 100%;
       width: 100%;
     }
   }
+
+  
+  .scrollable-table-container-g {
+    width: 100%;
+    max-width: 600px; /* Constrain the container width to 600px */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+  #g-leaderboard-table {
+    color: white;
+    padding: 1em;
+    font-size: 1.5rem;
+    margin: 0.1em;
+    border-spacing: 0 15px;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .scrollable-table-container-b {
+    width: 100%;
+    max-width: 600px; /* Constrain the container width to 600px */
+    overflow-x: auto; /* Enable horizontal scrolling */
+  }
+
+  #b-leaderboard-table {
+    color: white;
+    padding: 1em;
+    font-size: 1.5rem; /* Default font size */
+    margin: 1em;
+    border-spacing: 0 15px;
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  @media (max-width: 540px) {
+    .scrollable-table-container {
+      overflow-x: auto; /* Enable horizontal scroll on small screens */
+    }
+
+    #g-leaderboard-table {
+      font-size: 0.8rem; /* Smaller font size for small screens */
+    }
+
+    #b-leaderboard-table {
+      font-size: 0.8rem; /* Smaller font size for small screens */
+    }
+  }
 </style>
 </head>
+<body>
+  <!-- Your body content goes here -->
+</body>
+</html>
 
 <body id="body" class="animate mx-auto">
 
@@ -385,20 +541,22 @@
 
 <button id="show-g-hiscore-btn" data-song-id="">Show Leaderboard</button>
 <!-- <div style="height: 10px;"></div> -->
-<div id="g-hiscore-box" class="hiscore-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
-  <table id="g-leaderboard-table" style="color: white; padding: 1em; font-size: 1.5rem; margin: 1em; border-spacing: 0 15px; table-layout: fixed; width: 100%;">
-   <thead style="text-align: center;">
-     <tr>
-       <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
-       <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
-       <th style="padding: 10px 20px; width: 20%;">Score</th>
-       <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
-       <th style="padding: 10px 20px; width: 10%;"></th>
-     </tr>
-   </thead>
-   <tbody id="g-hiscore-table" style="text-align: center; padding: 1em;">
-   </tbody>
-  </table>
+<div id="g-hiscore-box" class="hiscore-box mx-auto">
+  <div class="scrollable-table-container-g">
+    <table id="g-leaderboard-table">
+     <thead style="text-align: center;">
+       <tr>
+        <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
+        <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
+        <th style="padding: 10px 20px; width: 20%;">Score</th>
+        <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
+        <th style="padding: 10px 20px; width: 10%;"></th>
+       </tr>
+     </thead>
+     <tbody id="g-hiscore-table" style="text-align: center; padding: 1em;">
+     </tbody>
+    </table>
+  </div>
 </div>
 
           </div>
@@ -424,20 +582,22 @@
 
 <button id="show-b-hiscore-btn" data-song-id="">Show Leaderboard</button>
 <!-- <div style="height: 10px;"></div> -->
-<div id="b-hiscore-box" class="hiscore-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
-  <table id="b-leaderboard-table" style="color: white; padding: 1em; font-size: 1.5rem; margin: 1em; border-spacing: 0 15px; table-layout: fixed; width: 100%;">
-   <thead style="text-align: center;">
-     <tr>
-      <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
-      <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
-      <th style="padding: 10px 20px; width: 20%;">Score</th>
-      <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
-      <th style="padding: 10px 20px; width: 10%;"></th>
-     </tr>
-   </thead>
-   <tbody id="b-hiscore-table" style="text-align: center; padding: 1em;">
-   </tbody>
-  </table>
+<div id="b-hiscore-box" class="hiscore-box mx-auto">
+  <div class="scrollable-table-container-b">
+    <table id="b-leaderboard-table">
+     <thead style="text-align: center;">
+       <tr>
+        <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
+        <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
+        <th style="padding: 10px 20px; width: 20%;">Score</th>
+        <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
+        <th style="padding: 10px 20px; width: 10%;"></th>
+       </tr>
+     </thead>
+     <tbody id="b-hiscore-table" style="text-align: center; padding: 1em;">
+     </tbody>
+    </table>
+  </div>
 </div>
 
 
