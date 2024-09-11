@@ -33,6 +33,17 @@
           var buttonText = $('#b-image-box').is(':visible') ? 'Hide Bass Path Image' : 'Show Bass Path Image';
           $('#toggle-b-image-btn').text(buttonText);
       });
+      $('#toggle-g-hiscore-btn').click(function() {
+          $('#g-hiscore-box').toggle();
+          var buttonText = $('#g-hiscore-box').is(':visible') ? 'Hide Guitar Leaderboard' : 'Show Guitar Leaderboard';
+          $('#toggle-g-hiscore-btn').text(buttonText);
+      });
+
+      $('#toggle-b-hiscore-btn').click(function() {
+          $('#b-hiscore-box').toggle();
+          var buttonText = $('#b-hiscore-box').is(':visible') ? 'Hide Bass Leaderboard' : 'Show Bass Leaderboard';
+          $('#toggle-b-hiscore-btn').text(buttonText);
+      });
   });
 </script>
 
@@ -53,7 +64,7 @@
     margin-right:0px !important;
     font-family: 'Abel', sans-serif;
     font-size:175%;
-    max-width:540px;
+    max-width:600px;
   }
   body, .modal-content {
     background-image:url('img/bg.png');
@@ -360,6 +371,7 @@
             <div class="badge bg-warning text-dark p-1 ms-1 bre text-white">BRE</div> <!-- Add text-white class here -->
             <a id="g-vid" class="utube p-0" target="_blank" rel="noopener noreferrer" href="index.html"><img src="img/video.png" alt="video.png" style="max-height:40px;" /></a>
             <div id="g-path" class="text-white"></div> <!-- Add text-white class here -->
+            <div id="g-hiscore" class="text-white"></div>
             <div id="g-note" class="text-white"><b>Notes: </b><span id="g-note-text"></span></div> <!-- Add text-white class here -->
             <div style="height: 25px;"></div>
 
@@ -369,6 +381,24 @@
 <div style="height: 10px;"></div>
 <div id="g-image-box" class="image-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
   <img id="g-image" src="" alt="Guitar Path Image" style="display:flex;" class="gpImage">
+</div>
+
+<button id="show-g-hiscore-btn" data-song-id="">Show Leaderboard</button>
+<!-- <div style="height: 10px;"></div> -->
+<div id="g-hiscore-box" class="hiscore-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <table id="g-leaderboard-table" style="color: white; padding: 1em; font-size: 1.5rem; margin: 1em; border-spacing: 0 15px; table-layout: fixed; width: 100%;">
+   <thead style="text-align: center;">
+     <tr>
+       <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
+       <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
+       <th style="padding: 10px 20px; width: 20%;">Score</th>
+       <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
+       <th style="padding: 10px 20px; width: 10%;"></th>
+     </tr>
+   </thead>
+   <tbody id="g-hiscore-table" style="text-align: center; padding: 1em;">
+   </tbody>
+  </table>
 </div>
 
           </div>
@@ -392,6 +422,23 @@
   <img id="b-image" src="" alt="Bass Path Image" class="gpImage">
 </div>
 
+<button id="show-b-hiscore-btn" data-song-id="">Show Leaderboard</button>
+<!-- <div style="height: 10px;"></div> -->
+<div id="b-hiscore-box" class="hiscore-box mx-auto" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+  <table id="b-leaderboard-table" style="color: white; padding: 1em; font-size: 1.5rem; margin: 1em; border-spacing: 0 15px; table-layout: fixed; width: 100%;">
+   <thead style="text-align: center;">
+     <tr>
+      <th style="padding: 0px 0px; width: 10%; text-align: left;">Rank</th> <!-- Aligned to the left -->
+      <th style="padding: 10px 20px; flex-grow: 2;">Player</th> <!-- Flex-grow for Player -->
+      <th style="padding: 10px 20px; width: 20%;">Score</th>
+      <th style="padding: 20px 30px; width: 20%;">Accuracy</th>
+      <th style="padding: 10px 20px; width: 10%;"></th>
+     </tr>
+   </thead>
+   <tbody id="b-hiscore-table" style="text-align: center; padding: 1em;">
+   </tbody>
+  </table>
+</div>
 
 
           <div id="b-info"><div id="b-info-title"></div></div>

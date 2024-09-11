@@ -227,9 +227,15 @@ function ShowSong(song) {
   }
  // Hide Guitar Path Image
  $('#g-image-box').hide();
+
+ $('#g-hiscore-box').hide();
+ $('#b-hiscore-box').hide();
   
  // Hide Bass Path Image
  $('#b-image-box').hide();
+
+ // Hide Guitar Leaderboard
+  $('#g-lb').hide();
 
  // Set image sources
  var gImagePath = 'js/paths/' + song.data.g_image.replace(/'/g, ''); // Adjusted path
@@ -251,7 +257,7 @@ function ShowSong(song) {
 
  // Event listener for toggling visibility of bass image box
  $('#show-b-image-btn').click(function() {
-   $('#b-image-box').toggle();
+   $('#b-hiscore-box').toggle();
    var btnText = $('#show-b-image-btn').text();
    if (btnText === 'Show Bass Path Image') {
      $('#show-b-image-btn').text('Hide Bass Path Image');
@@ -259,6 +265,51 @@ function ShowSong(song) {
      $('#show-b-image-btn').text('Show Bass Path Image');
    }
  });
+
+  function setSongId(songId) {
+    $('#show-g-hiscore-btn').attr('data-song-id', songId);
+  }
+
+ $('#show-g-hiscore-btn').click(function() {
+  // console.log(song.data);
+    // const songId = $(this).attr('data-song-id');
+    const songId = song.data.shortname;
+    // console.log("SONG ID", songId);
+    $('#g-hiscore-box').toggle();
+    var btnText = $('#show-g-hiscore-btn').text();
+    if (btnText === 'Show Leaderboard') {
+      // const songId = this.getAttribute('data-song-id');
+      GetGuitarLeaderboard(songId);
+      $('#g-hiscore-box').show();
+      $('#show-g-hiscore-btn').text('Hide Leaderboard');
+    } else {
+      $('#g-hiscore-box').hide();
+      $('#show-g-hiscore-btn').text('Show Leaderboard');
+    }
+  });
+
+  $('#show-b-hiscore-btn').click(function() {
+    // console.log(song.data);
+      // const songId = $(this).attr('data-song-id');
+      const songId = song.data.shortname;
+      // console.log("SONG ID", songId);
+      $('#b-hiscore-box').toggle();
+      var btnText = $('#show-b-hiscore-btn').text();
+      if (btnText === 'Show Leaderboard') {
+        // const songId = this.getAttribute('data-song-id');
+        GetBassLeaderboard(songId);
+        $('#b-hiscore-box').show();
+        $('#show-b-hiscore-btn').text('Hide Leaderboard');
+      } else {
+        $('#b-hiscore-box').hide();
+        $('#show-b-hiscore-btn').text('Show Leaderboard');
+      }
+    });
+
+  // document.getElementById('leaderboard-btn').addEventListener('click', function() {
+  //   const songId = this.getAttribute('data-song-id');
+  //   GetLeaderboard(songId);
+  // });
 
   // Other existing code...
 
@@ -542,4 +593,112 @@ function CreateSetlistHTML() {
 
 function SetlistSelect(songIndex) {
   ShowSong(Setlist[songIndex]);
+}
+
+async function GetGuitarLeaderboard(songId) {
+  // const data = await fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`).then(response => response.json());
+  fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`)
+    .then(response => response.json())
+    .then(data => {
+      if (Array.isArray(data.entries)) {
+        updateGuitarLeaderboardTable(data.entries);
+      } else {
+        console.error('Expected an array but got:', data);
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching leaderboard data:', error);
+    });
+}
+
+async function GetBassLeaderboard(songId) {
+  //https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/masterofpuppets/Solo_PeripheralBass_0.json
+  fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralBass_0.json`)
+    .then(response => response.json())
+    .then(data => {
+      if (Array.isArray(data.entries)) {
+        updateBassLeaderboardTable(data.entries);
+      } else {
+        console.error('Expected an array but got:', data);
+      }
+    })
+    .catch(error => {
+      console.error('Error fetching leaderboard data:', error);
+    });
+}
+
+function updateGuitarLeaderboardTable(data) {
+  const tableBody = document.getElementById('g-leaderboard-table').getElementsByTagName('tbody')[0];
+  tableBody.innerHTML = ''; // Clear existing table data
+
+  // Cap the number of entries to display to 10
+  data = data.slice(0, 10);
+
+  function calcScore(entry) {
+    return entry.best_run.score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  data.map(item => {
+    const row = document.createElement('tr');
+    
+    // Apply colors based on rank
+    if (item.rank === 1) {
+      row.style.backgroundColor = 'gold';
+      row.style.color = 'black'; // Ensure readability on gold background
+    } else if (item.rank === 2) {
+      row.style.backgroundColor = 'silver';
+      row.style.color = 'black'; // Ensure readability on silver background
+    } else if (item.rank === 3) {
+      row.style.backgroundColor = '#cd7f32'; // Bronze color
+      row.style.color = 'white'; // Ensure readability on bronze background
+    }
+
+    row.innerHTML = `
+      <td>${item.rank}</td>
+      <td style="text-align: left;">${item.userName}</td>
+      <td>${calcScore(item)}</td>
+      <td>${item.best_run.accuracy}%</td>
+      <td>${item.best_run.fullcombo ? "FC" : ""}</td>
+    `;
+    
+    tableBody.appendChild(row);
+  });
+}
+
+function updateBassLeaderboardTable(data) {
+  const tableBody = document.getElementById('b-leaderboard-table').getElementsByTagName('tbody')[0];
+  tableBody.innerHTML = ''; // Clear existing table data
+
+  // Cap the number of entries to display to 10
+  data = data.slice(0, 10);
+
+  function calcScore(entry) {
+    return entry.best_run.score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  }
+
+  data.map(item => {
+    const row = document.createElement('tr');
+    
+    // Apply colors based on rank
+    if (item.rank === 1) {
+      row.style.backgroundColor = 'gold';
+      row.style.color = 'black'; // Ensure readability on gold background
+    } else if (item.rank === 2) {
+      row.style.backgroundColor = 'silver';
+      row.style.color = 'black'; // Ensure readability on silver background
+    } else if (item.rank === 3) {
+      row.style.backgroundColor = '#cd7f32'; // Bronze color
+      row.style.color = 'white'; // Ensure readability on bronze background
+    }
+
+    row.innerHTML = `
+      <td>${item.rank}</td>
+      <td style="text-align: left;">${item.userName}</td>
+      <td>${calcScore(item)}</td>
+      <td>${item.best_run.accuracy}%</td>
+      <td>${item.best_run.fullcombo ? "FC" : ""}</td>
+    `;
+    
+    tableBody.appendChild(row);
+  });
 }
