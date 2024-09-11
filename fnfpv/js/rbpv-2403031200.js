@@ -40,6 +40,7 @@ songs: [
         b_gs : " 108723",
         bvid : "",
         b_image : "'24k_magic_by_bruno_mars_bass.png'",
+        shortname : "24kmagic",
     }},
 { value : "abcdefu by GAYLE", 
         data : {
@@ -69,6 +70,7 @@ songs: [
         b_gs : " 28937",
         bvid : "",
         b_image : "'abcdefu_by_gayle_bass.png'",
+        shortname : "abcdefu",
     }},
 { value : "Ain't No Rest For The Wicked by Cage The Elephant", 
         data : {
@@ -98,6 +100,7 @@ songs: [
         b_gs : " 28240",
         bvid : "",
         b_image : "'aint_no_rest_for_the_wicked_by_cage_the_elephant_bass.png'",
+        shortname : "aintnorestforthewicked",
     }},
 { value : "All Of Me (Tiësto's Birthday Treatment Remix) by John Legend", 
         data : {
@@ -127,6 +130,7 @@ songs: [
         b_gs : " 101691",
         bvid : "",
         b_image : "'all_of_me_tiestos_birthday_treatment_remix_by_john_legend_bass.png'",
+        shortname : "allofme",
     }},
 { value : "all the good girls go to hell by Billie Eilish", 
         data : {
@@ -156,6 +160,7 @@ songs: [
         b_gs : " 51337",
         bvid : "",
         b_image : "'all_the_good_girls_go_to_hell_by_billie_eilish_bass.png'",
+        shortname : "allthegoodgirls",
     }},
 { value : "All The Small Things by blink-182", 
         data : {
@@ -185,6 +190,7 @@ songs: [
         b_gs : " 170256",
         bvid : "",
         b_image : "'all_the_small_things_by_blink182_bass.png'",
+        shortname : "allthesmallthings",
     }},
 { value : "All The Stars by Kendrick Lamar ft. SZA", 
         data : {
@@ -214,6 +220,7 @@ songs: [
         b_gs : " 40819",
         bvid : "",
         b_image : "'all_the_stars_by_kendrick_lamar_ft_sza_bass.png'",
+        shortname : "allthestars",
     }},
 { value : "Applause by Lady Gaga", 
         data : {
@@ -243,6 +250,7 @@ songs: [
         b_gs : " 60653",
         bvid : "",
         b_image : "'applause_by_lady_gaga_bass.png'",
+        shortname : "applause",
     }},
 { value : "Apple by Charli xcx", 
         data : {
@@ -272,6 +280,7 @@ songs: [
         b_gs : " 94856",
         bvid : "",
         b_image : "'apple_by_charli_xcx_bass.png'",
+        shortname : "apple",
     }},
 { value : "Astronaut In The Ocean by Masked Wolf", 
         data : {
@@ -301,6 +310,7 @@ songs: [
         b_gs : " 40139",
         bvid : "",
         b_image : "'astronaut_in_the_ocean_by_masked_wolf_bass.png'",
+        shortname : "astronoutintheocean",
     }},
 { value : "bad guy by Billie Eilish", 
         data : {
@@ -330,6 +340,7 @@ songs: [
         b_gs : " 64451",
         bvid : "",
         b_image : "'bad_guy_by_billie_eilish_bass.png'",
+        shortname : "badguy",
     }},
 { value : "Bad Romance by Lady Gaga", 
         data : {
@@ -359,6 +370,7 @@ songs: [
         b_gs : " 242333",
         bvid : "",
         b_image : "'bad_romance_by_lady_gaga_bass.png'",
+        shortname : "badromance",
     }},
 { value : "Bandit by Don Toliver", 
         data : {
@@ -388,6 +400,7 @@ songs: [
         b_gs : " 35237",
         bvid : "",
         b_image : "'bandit_by_don_toliver_bass.png'",
+        shortname : "bandit",
     }},
 { value : "Barbie Girl by Aqua", 
         data : {
@@ -417,6 +430,7 @@ songs: [
         b_gs : " 73535",
         bvid : "",
         b_image : "'barbie_girl_by_aqua_bass.png'",
+        shortname : "barbiegirl",
     }},
 { value : "Basket Case by Green Day", 
         data : {
@@ -446,6 +460,7 @@ songs: [
         b_gs : " 106541",
         bvid : "",
         b_image : "'basket_case_by_green_day_bass.png'",
+        shortname : "basketcase",
     }},
 { value : "Battery by Metallica", 
         data : {
@@ -475,6 +490,7 @@ songs: [
         b_gs : " 206753",
         bvid : "",
         b_image : "'battery_by_metallica_bass.png'",
+        shortname : "battery",
     }},
 { value : "Beautiful Day by U2", 
         data : {
@@ -504,6 +520,7 @@ songs: [
         b_gs : " 156118",
         bvid : "",
         b_image : "'beautiful_day_by_u2_bass.png'",
+        shortname : "beautifulday",
     }},
 { value : "Before I Forget by Slipknot", 
         data : {
@@ -533,6 +550,7 @@ songs: [
         b_gs : " 190280",
         bvid : "",
         b_image : "'before_i_forget_by_slipknot_bass.png'",
+        shortname : "beforeiforget",
     }},
 { value : "Beggin' by Måneskin", 
         data : {
@@ -562,6 +580,7 @@ songs: [
         b_gs : " 75157",
         bvid : "",
         b_image : "'beggin_by_maneskin_bass.png'",
+        shortname : "beggin",
     }},
 { value : "Believer by Imagine Dragons", 
         data : {
@@ -591,6 +610,7 @@ songs: [
         b_gs : " 15430",
         bvid : "",
         b_image : "'believer_by_imagine_dragons_bass.png'",
+        shortname : "believer",
     }},
 { value : "Return of the Tiger by Epic Games", 
         data : {
@@ -620,6 +640,7 @@ songs: [
         b_gs : " 96785",
         bvid : "",
         b_image : "'return_of_the_tiger_by_epic_games_bass.png'",
+        shortname : "bengalbasher",
     }},
 { value : "Best Buds by Epic Games", 
         data : {
@@ -649,6 +670,7 @@ songs: [
         b_gs : " 102036",
         bvid : "",
         b_image : "'best_buds_by_epic_games_bass.png'",
+        shortname : "bestbuds",
     }},
 { value : "Eyes Closed by Imagine Dragons", 
         data : {
@@ -678,6 +700,7 @@ songs: [
         b_gs : " 56333",
         bvid : "",
         b_image : "'eyes_closed_by_imagine_dragons_bass.png'",
+        shortname : "betrayedaardvark",
     }},
 { value : "Better Now by Post Malone", 
         data : {
@@ -707,6 +730,7 @@ songs: [
         b_gs : " 54315",
         bvid : "",
         b_image : "'better_now_by_post_malone_bass.png'",
+        shortname : "betternow",
     }},
 { value : "Better Off Alone by Alice Deejay", 
         data : {
@@ -736,6 +760,7 @@ songs: [
         b_gs : " 173202",
         bvid : "",
         b_image : "'better_off_alone_by_alice_deejay_bass.png'",
+        shortname : "betteroffalone",
     }},
 { value : "Beyond the Flame by Epic Games", 
         data : {
@@ -765,6 +790,7 @@ songs: [
         b_gs : " 236315",
         bvid : "",
         b_image : "'beyond_the_flame_by_epic_games_bass.png'",
+        shortname : "beyondtheflame",
     }},
 { value : "Big Energy by Latto", 
         data : {
@@ -794,6 +820,7 @@ songs: [
         b_gs : " 32135",
         bvid : "",
         b_image : "'big_energy_by_latto_bass.png'",
+        shortname : "bigenergy",
     }},
 { value : "Black Beatles by Rae Sremmurd ft. Gucci Mane", 
         data : {
@@ -823,6 +850,7 @@ songs: [
         b_gs : " 80038",
         bvid : "",
         b_image : "'black_beatles_by_rae_sremmurd_ft_gucci_mane_bass.png'",
+        shortname : "blackbeatles",
     }},
 { value : "Black Hole Sun by Soundgarden", 
         data : {
@@ -852,6 +880,7 @@ songs: [
         b_gs : " 105895",
         bvid : "",
         b_image : "'black_hole_sun_by_soundgarden_bass.png'",
+        shortname : "blackholesun",
     }},
 { value : "Blinding Lights by The Weeknd", 
         data : {
@@ -881,6 +910,7 @@ songs: [
         b_gs : " 54329",
         bvid : "",
         b_image : "'blinding_lights_by_the_weeknd_bass.png'",
+        shortname : "blindinglights",
     }},
 { value : "Blitzkrieg Bop by Ramones", 
         data : {
@@ -910,6 +940,7 @@ songs: [
         b_gs : " 102608",
         bvid : "",
         b_image : "'blitzkrieg_bop_by_ramones_bass.png'",
+        shortname : "blitzkriegbop",
     }},
 { value : "Bloody Mary by Lady Gaga", 
         data : {
@@ -939,6 +970,7 @@ songs: [
         b_gs : " 105479",
         bvid : "",
         b_image : "'bloody_mary_by_lady_gaga_bass.png'",
+        shortname : "bloodymary",
     }},
 { value : "Bloom by Epic Games", 
         data : {
@@ -968,6 +1000,7 @@ songs: [
         b_gs : " 43941",
         bvid : "",
         b_image : "'bloom_by_epic_games_bass.png'",
+        shortname : "bloom",
     }},
 { value : "Blueberry Faygo by Lil Mosey", 
         data : {
@@ -997,6 +1030,7 @@ songs: [
         b_gs : " 47439",
         bvid : "",
         b_image : "'blueberry_faygo_by_lil_mosey_bass.png'",
+        shortname : "blueberryfaygo",
     }},
 { value : "Born This Way by Lady Gaga", 
         data : {
@@ -1026,6 +1060,7 @@ songs: [
         b_gs : " 148090",
         bvid : "",
         b_image : "'born_this_way_by_lady_gaga_bass.png'",
+        shortname : "bornthisway",
     }},
 { value : "Bouncin' Back by Epic Games", 
         data : {
@@ -1055,6 +1090,7 @@ songs: [
         b_gs : " 95777",
         bvid : "",
         b_image : "'bouncin_back_by_epic_games_bass.png'",
+        shortname : "bouncinback",
     }},
 { value : "Boy's A Liar Pt. 2 by PinkPantheress & Ice Spice", 
         data : {
@@ -1084,6 +1120,7 @@ songs: [
         b_gs : " 40167",
         bvid : "",
         b_image : "'boys_a_liar_pt_2_by_pinkpantheress__ice_spice_bass.png'",
+        shortname : "boysaliarpt2",
     }},
 { value : "Brace for Chaos by Epic Games", 
         data : {
@@ -1113,6 +1150,7 @@ songs: [
         b_gs : " 73342",
         bvid : "",
         b_image : "'brace_for_chaos_by_epic_games_bass.png'",
+        shortname : "braceforchaos",
     }},
 { value : "Breaking Me by Topic w/ A7S", 
         data : {
@@ -1142,6 +1180,7 @@ songs: [
         b_gs : " 41390",
         bvid : "",
         b_image : "'breaking_me_by_topic_w_a7s_bass.png'",
+        shortname : "breakingme",
     }},
 { value : "Breed by Nirvana", 
         data : {
@@ -1171,6 +1210,7 @@ songs: [
         b_gs : " 134600",
         bvid : "",
         b_image : "'breed_by_nirvana_bass.png'",
+        shortname : "breed",
     }},
 { value : "Bring Me To Life by Evanescence", 
         data : {
@@ -1200,6 +1240,7 @@ songs: [
         b_gs : " 103685",
         bvid : "",
         b_image : "'bring_me_to_life_by_evanescence_bass.png'",
+        shortname : "bringmetolife",
     }},
 { value : "Broccoli by DRAM ft. Lil Yachty", 
         data : {
@@ -1229,6 +1270,7 @@ songs: [
         b_gs : " 27205",
         bvid : "",
         b_image : "'broccoli_by_dram_ft_lil_yachty_bass.png'",
+        shortname : "broccoli",
     }},
 { value : "Buddy Holly by Weezer", 
         data : {
@@ -1258,6 +1300,7 @@ songs: [
         b_gs : " 106576",
         bvid : "",
         b_image : "'buddy_holly_by_weezer_bass.png'",
+        shortname : "buddyholly",
     }},
 { value : "Bulls On Parade by Rage Against The Machine", 
         data : {
@@ -1287,6 +1330,7 @@ songs: [
         b_gs : " 110509",
         bvid : "",
         b_image : "'bulls_on_parade_by_rage_against_the_machine_bass.png'",
+        shortname : "bullsonparade",
     }},
 { value : "Bust A Move by Young MC", 
         data : {
@@ -1316,6 +1360,7 @@ songs: [
         b_gs : " 135121",
         bvid : "",
         b_image : "'bust_a_move_by_young_mc_bass.png'",
+        shortname : "bustamove",
     }},
 { value : "Butter by BTS", 
         data : {
@@ -1345,6 +1390,7 @@ songs: [
         b_gs : " 76430",
         bvid : "",
         b_image : "'butter_by_bts_bass.png'",
+        shortname : "butter",
     }},
 { value : "Butter Barn Hoedown by Epic Games", 
         data : {
@@ -1374,6 +1420,7 @@ songs: [
         b_gs : " 62029",
         bvid : "",
         b_image : "'butter_barn_hoedown_by_epic_games_bass.png'",
+        shortname : "butterbarnhoedown",
     }},
 { value : "CAIRO by Karol G, Ovy On The Drums", 
         data : {
@@ -1403,6 +1450,7 @@ songs: [
         b_gs : " 51921",
         bvid : "",
         b_image : "'cairo_by_karol_g_ovy_on_the_drums_bass.png'",
+        shortname : "cairo",
     }},
 { value : "Cake By The Ocean by DNCE", 
         data : {
@@ -1432,6 +1480,7 @@ songs: [
         b_gs : " 117788",
         bvid : "",
         b_image : "'cake_by_the_ocean_by_dnce_bass.png'",
+        shortname : "cakebytheocean",
     }},
 { value : "Call Me Maybe by Carly Rae Jepsen", 
         data : {
@@ -1461,6 +1510,7 @@ songs: [
         b_gs : " 35978",
         bvid : "",
         b_image : "'call_me_maybe_by_carly_rae_jepsen_bass.png'",
+        shortname : "callmemaybe",
     }},
 { value : "Can't Feel My Face by The Weeknd", 
         data : {
@@ -1490,6 +1540,7 @@ songs: [
         b_gs : " 90974",
         bvid : "",
         b_image : "'cant_feel_my_face_by_the_weeknd_bass.png'",
+        shortname : "cantfeelmyface",
     }},
 { value : "Cantina Band by John Williams, London Symphony Orchestra", 
         data : {
@@ -1519,6 +1570,7 @@ songs: [
         b_gs : " 75750",
         bvid : "",
         b_image : "'cantina_band_by_john_williams_london_symphony_orchestra_bass.png'",
+        shortname : "cantinaband",
     }},
 { value : "Can't Stop The Feeling! by Justin Timberlake", 
         data : {
@@ -1548,6 +1600,7 @@ songs: [
         b_gs : " 93307",
         bvid : "",
         b_image : "'cant_stop_the_feeling_by_justin_timberlake_bass.png'",
+        shortname : "cantstopthefeeling",
     }},
 { value : "Carry on Wayward Son by Kansas", 
         data : {
@@ -1577,6 +1630,7 @@ songs: [
         b_gs : " 154271",
         bvid : "",
         b_image : "'carry_on_wayward_son_by_kansas_bass.png'",
+        shortname : "carryonwaywardson",
     }},
 { value : "Change by Epic Games", 
         data : {
@@ -1606,6 +1660,7 @@ songs: [
         b_gs : " 109122",
         bvid : "",
         b_image : "'change_by_epic_games_bass.png'",
+        shortname : "change",
     }},
 { value : "Changes by 2Pac ft. Talent", 
         data : {
@@ -1635,6 +1690,7 @@ songs: [
         b_gs : " 68412",
         bvid : "",
         b_image : "'changes_by_2pac_ft_talent_bass.png'",
+        shortname : "changes",
     }},
 { value : "Cheap Thrills by Sia ft. Sean Paul", 
         data : {
@@ -1664,6 +1720,7 @@ songs: [
         b_gs : " 53791",
         bvid : "",
         b_image : "'cheap_thrills_by_sia_ft_sean_paul_bass.png'",
+        shortname : "cheapthrills",
     }},
 { value : "CHIHIRO by Billie Eilish", 
         data : {
@@ -1693,6 +1750,7 @@ songs: [
         b_gs : " 138941",
         bvid : "",
         b_image : "'chihiro_by_billie_eilish_bass.png'",
+        shortname : "chihiro",
     }},
 { value : "Circles by Post Malone", 
         data : {
@@ -1722,6 +1780,7 @@ songs: [
         b_gs : " 76002",
         bvid : "",
         b_image : "'circles_by_post_malone_bass.png'",
+        shortname : "circles",
     }},
 { value : "Closer by The Chainsmokers ft. Halsey", 
         data : {
@@ -1751,6 +1810,7 @@ songs: [
         b_gs : " 57902",
         bvid : "",
         b_image : "'closer_by_the_chainsmokers_ft_halsey_bass.png'",
+        shortname : "closer",
     }},
 { value : "Come & Go by Juice WRLD w/ Marshmello", 
         data : {
@@ -1780,6 +1840,7 @@ songs: [
         b_gs : " 48174",
         bvid : "",
         b_image : "'come__go_by_juice_wrld_w_marshmello_bass.png'",
+        shortname : "comeandgo",
     }},
 { value : "Counting Stars by OneRepublic", 
         data : {
@@ -1809,6 +1870,7 @@ songs: [
         b_gs : " 85799",
         bvid : "",
         b_image : "'counting_stars_by_onerepublic_bass.png'",
+        shortname : "countingstars",
     }},
 { value : "Cradles by Sub Urban", 
         data : {
@@ -1838,6 +1900,7 @@ songs: [
         b_gs : " 22251",
         bvid : "",
         b_image : "'cradles_by_sub_urban_bass.png'",
+        shortname : "cradles",
     }},
 { value : "Creatures In Heaven by Glass Animals", 
         data : {
@@ -1867,6 +1930,7 @@ songs: [
         b_gs : " 38079",
         bvid : "",
         b_image : "'creatures_in_heaven_by_glass_animals_bass.png'",
+        shortname : "creaturesinheaven",
     }},
 { value : "DÁKITI by Bad Bunny and Jhayco", 
         data : {
@@ -1896,6 +1960,7 @@ songs: [
         b_gs : " 22575",
         bvid : "",
         b_image : "'dakiti_by_bad_bunny_and_jhayco_bass.png'",
+        shortname : "dakiti",
     }},
 { value : "Day 'N' Nite by Kid Cudi", 
         data : {
@@ -1925,6 +1990,7 @@ songs: [
         b_gs : " 43299",
         bvid : "",
         b_image : "'day_n_nite_by_kid_cudi_bass.png'",
+        shortname : "daynnite",
     }},
 { value : "Dirty Little Secret by The All-American Rejects", 
         data : {
@@ -1954,6 +2020,7 @@ songs: [
         b_gs : " 115725",
         bvid : "",
         b_image : "'dirty_little_secret_by_the_allamerican_rejects_bass.png'",
+        shortname : "dirtylittlesecret",
     }},
 { value : "Dog Days Are Over by Florence + The Machine", 
         data : {
@@ -1983,6 +2050,7 @@ songs: [
         b_gs : " 17531",
         bvid : "",
         b_image : "'dog_days_are_over_by_florence__the_machine_bass.png'",
+        shortname : "dogdaysareover",
     }},
 { value : "(Don't Fear) The Reaper by Blue Öyster Cult", 
         data : {
@@ -2012,6 +2080,7 @@ songs: [
         b_gs : " 178857",
         bvid : "",
         b_image : "'dont_fear_the_reaper_by_blue_oyster_cult_bass.png'",
+        shortname : "dontfearthereaper",
     }},
 { value : "Don't Let Me Down by The Chainsmokers ft. Daya", 
         data : {
@@ -2041,6 +2110,7 @@ songs: [
         b_gs : " 38763",
         bvid : "",
         b_image : "'dont_let_me_down_by_the_chainsmokers_ft_daya_bass.png'",
+        shortname : "dontletmedown",
     }},
 { value : "Don't You Worry Child by Swedish House Mafia ft. John Martin", 
         data : {
@@ -2070,6 +2140,7 @@ songs: [
         b_gs : " 61339",
         bvid : "",
         b_image : "'dont_you_worry_child_by_swedish_house_mafia_ft_john_martin_bass.png'",
+        shortname : "dontyouworrychild",
     }},
 { value : "Down with the Sickness by Disturbed", 
         data : {
@@ -2099,6 +2170,7 @@ songs: [
         b_gs : " 175483",
         bvid : "",
         b_image : "'down_with_the_sickness_by_disturbed_bass.png'",
+        shortname : "downwiththesickness",
     }},
 { value : "Dragula by Rob Zombie", 
         data : {
@@ -2128,6 +2200,7 @@ songs: [
         b_gs : " 122555",
         bvid : "",
         b_image : "'dragula_by_rob_zombie_bass.png'",
+        shortname : "dragula",
     }},
 { value : "Dreamer by Epic Games", 
         data : {
@@ -2157,6 +2230,7 @@ songs: [
         b_gs : " 124060",
         bvid : "",
         b_image : "'dreamer_by_epic_games_bass.png'",
+        shortname : "dreamer",
     }},
 { value : "Dynamite by BTS ", 
         data : {
@@ -2186,6 +2260,7 @@ songs: [
         b_gs : " 88346",
         bvid : "",
         b_image : "'dynamite_by_bts__bass.png'",
+        shortname : "dynamite",
     }},
 { value : "The Edge of Glory by Lady Gaga", 
         data : {
@@ -2215,6 +2290,7 @@ songs: [
         b_gs : " 177049",
         bvid : "",
         b_image : "'the_edge_of_glory_by_lady_gaga_bass.png'",
+        shortname : "edgeofglory",
     }},
 { value : "8-Bit Beat by Epic Games", 
         data : {
@@ -2244,6 +2320,7 @@ songs: [
         b_gs : " 71655",
         bvid : "",
         b_image : "'8bit_beat_by_epic_games_bass.png'",
+        shortname : "eightbitbeat",
     }},
 { value : "Ella Baila Sola by Eslabon Armado, Peso Pluma ", 
         data : {
@@ -2273,6 +2350,7 @@ songs: [
         b_gs : " 141248",
         bvid : "",
         b_image : "'ella_baila_sola_by_eslabon_armado_peso_pluma__bass.png'",
+        shortname : "ellabailasola",
     }},
 { value : "emo girl by mgk ft. WILLOW", 
         data : {
@@ -2302,6 +2380,7 @@ songs: [
         b_gs : " 110812",
         bvid : "",
         b_image : "'emo_girl_by_mgk_ft_willow_bass.png'",
+        shortname : "emogirl",
     }},
 { value : "Enter Sandman by Metallica", 
         data : {
@@ -2331,6 +2410,7 @@ songs: [
         b_gs : " 191215",
         bvid : "",
         b_image : "'enter_sandman_by_metallica_bass.png'",
+        shortname : "entersandman",
     }},
 { value : "Espresso by Sabrina Carpenter", 
         data : {
@@ -2360,6 +2440,7 @@ songs: [
         b_gs : " 67850",
         bvid : "",
         b_image : "'espresso_by_sabrina_carpenter_bass.png'",
+        shortname : "espresso",
     }},
 { value : "Everlong by Foo Fighters", 
         data : {
@@ -2389,6 +2470,7 @@ songs: [
         b_gs : " 172981",
         bvid : "",
         b_image : "'everlong_by_foo_fighters_bass.png'",
+        shortname : "everlong",
     }},
 { value : "Fade to Black by Metallica", 
         data : {
@@ -2418,6 +2500,7 @@ songs: [
         b_gs : " 246313",
         bvid : "",
         b_image : "'fade_to_black_by_metallica_bass.png'",
+        shortname : "fadetoblack",
     }},
 { value : "Everybody Falls (Chill Mix) by Epic Games", 
         data : {
@@ -2447,6 +2530,7 @@ songs: [
         b_gs : " 58659",
         bvid : "",
         b_image : "'everybody_falls_chill_mix_by_epic_games_bass.png'",
+        shortname : "fallguys",
     }},
 { value : "Feel Good Inc by Gorillaz", 
         data : {
@@ -2476,6 +2560,7 @@ songs: [
         b_gs : " 44013",
         bvid : "",
         b_image : "'feel_good_inc_by_gorillaz_bass.png'",
+        shortname : "feelgoodinc",
     }},
 { value : "Feel It Still by Portugal. The Man", 
         data : {
@@ -2505,6 +2590,7 @@ songs: [
         b_gs : " 84941",
         bvid : "",
         b_image : "'feel_it_still_by_portugal_the_man_bass.png'",
+        shortname : "feelitstill",
     }},
 { value : "Find the Fury by Epic Games", 
         data : {
@@ -2534,6 +2620,7 @@ songs: [
         b_gs : " 59721",
         bvid : "",
         b_image : "'find_the_fury_by_epic_games_bass.png'",
+        shortname : "findthefury",
     }},
 { value : "Fire and Steel by Epic Games", 
         data : {
@@ -2563,6 +2650,7 @@ songs: [
         b_gs : " 65828",
         bvid : "",
         b_image : "'fire_and_steel_by_epic_games_bass.png'",
+        shortname : "fireandsteel",
     }},
 { value : "Firework by Katy Perry", 
         data : {
@@ -2592,6 +2680,7 @@ songs: [
         b_gs : " 95694",
         bvid : "",
         b_image : "'firework_by_katy_perry_bass.png'",
+        shortname : "firework",
     }},
 { value : "Flickering Flame by Epic Games", 
         data : {
@@ -2621,6 +2710,7 @@ songs: [
         b_gs : " 56544",
         bvid : "",
         b_image : "'flickering_flame_by_epic_games_bass.png'",
+        shortname : "flickeringflame",
     }},
 { value : "Flowers by Miley Cyrus ", 
         data : {
@@ -2650,6 +2740,7 @@ songs: [
         b_gs : " 88429",
         bvid : "",
         b_image : "'flowers_by_miley_cyrus__bass.png'",
+        shortname : "flowers",
     }},
 { value : "Fly by Quavo and Lenny Kravitz", 
         data : {
@@ -2679,6 +2770,7 @@ songs: [
         b_gs : " 49806",
         bvid : "",
         b_image : "'fly_by_quavo_and_lenny_kravitz_bass.png'",
+        shortname : "fly",
     }},
 { value : "For Latveria by Epic Games", 
         data : {
@@ -2708,6 +2800,7 @@ songs: [
         b_gs : " 75940",
         bvid : "",
         b_image : "'for_latveria_by_epic_games_bass.png'",
+        shortname : "forlatveria",
     }},
 { value : "For Whom The Bell Tolls by Metallica", 
         data : {
@@ -2737,6 +2830,7 @@ songs: [
         b_gs : " 166488",
         bvid : "",
         b_image : "'for_whom_the_bell_tolls_by_metallica_bass.png'",
+        shortname : "forwhomthebelltolls",
     }},
 { value : "Friday I'm In Love by The Cure", 
         data : {
@@ -2766,6 +2860,7 @@ songs: [
         b_gs : " 122829",
         bvid : "",
         b_image : "'friday_im_in_love_by_the_cure_bass.png'",
+        shortname : "fridayiminlove",
     }},
 { value : "Fuel by Metallica", 
         data : {
@@ -2795,6 +2890,7 @@ songs: [
         b_gs : " 216037",
         bvid : "",
         b_image : "'fuel_by_metallica_bass.png'",
+        shortname : "fuel",
     }},
 { value : "Gangnam Style by PSY", 
         data : {
@@ -2824,6 +2920,7 @@ songs: [
         b_gs : " 128311",
         bvid : "",
         b_image : "'gangnam_style_by_psy_bass.png'",
+        shortname : "gangnamstyle",
     }},
 { value : "get him back! by Olivia Rodrigo", 
         data : {
@@ -2853,6 +2950,7 @@ songs: [
         b_gs : " 61336",
         bvid : "",
         b_image : "'get_him_back_by_olivia_rodrigo_bass.png'",
+        shortname : "gethimback",
     }},
 { value : "Get Low by Lil Jon & The East Side Boyz ft. Ying Yang Twins", 
         data : {
@@ -2882,6 +2980,7 @@ songs: [
         b_gs : " 76654",
         bvid : "",
         b_image : "'get_low_by_lil_jon__the_east_side_boyz_ft_ying_yang_twins_bass.png'",
+        shortname : "getlow",
     }},
 { value : "Gimme The Light by Sean Paul", 
         data : {
@@ -2911,6 +3010,7 @@ songs: [
         b_gs : " 51376",
         bvid : "",
         b_image : "'gimme_the_light_by_sean_paul_bass.png'",
+        shortname : "gimmethelight",
     }},
 { value : "Give Me Everything by Pitbull ft. Ne-Yo, Afrojack & Nayer", 
         data : {
@@ -2940,6 +3040,7 @@ songs: [
         b_gs : " 50858",
         bvid : "",
         b_image : "'give_me_everything_by_pitbull_ft_neyo_afrojack__nayer_bass.png'",
+        shortname : "givemeeverything",
     }},
 { value : "good 4 u by Olivia Rodrigo", 
         data : {
@@ -2969,6 +3070,7 @@ songs: [
         b_gs : " 90706",
         bvid : "",
         b_image : "'good_4_u_by_olivia_rodrigo_bass.png'",
+        shortname : "good4u",
     }},
 { value : "Go With The Flow by Queens of the Stone Age", 
         data : {
@@ -2998,6 +3100,7 @@ songs: [
         b_gs : " 160672",
         bvid : "",
         b_image : "'go_with_the_flow_by_queens_of_the_stone_age_bass.png'",
+        shortname : "gowiththeflow",
     }},
 { value : "Gwenpool's Multiverse by Epic Games", 
         data : {
@@ -3027,6 +3130,7 @@ songs: [
         b_gs : " 77033",
         bvid : "",
         b_image : "'gwenpools_multiverse_by_epic_games_bass.png'",
+        shortname : "gwenpoolsmultiverse",
     }},
 { value : "Hail To The King by Avenged Sevenfold", 
         data : {
@@ -3056,6 +3160,7 @@ songs: [
         b_gs : " 127759",
         bvid : "",
         b_image : "'hail_to_the_king_by_avenged_sevenfold_bass.png'",
+        shortname : "hailtotheking",
     }},
 { value : "Happier Than Ever - Edit by Billie Eilish", 
         data : {
@@ -3085,6 +3190,7 @@ songs: [
         b_gs : " 43348",
         bvid : "",
         b_image : "'happier_than_ever__edit_by_billie_eilish_bass.png'",
+        shortname : "happierthanever",
     }},
 { value : "Heartbreaker by Pat Benatar", 
         data : {
@@ -3114,6 +3220,7 @@ songs: [
         b_gs : " 123232",
         bvid : "",
         b_image : "'heartbreaker_by_pat_benatar_bass.png'",
+        shortname : "heartbreaker",
     }},
 { value : "Heathens by Twenty One Pilots", 
         data : {
@@ -3143,6 +3250,7 @@ songs: [
         b_gs : " 28778",
         bvid : "",
         b_image : "'heathens_by_twenty_one_pilots_bass.png'",
+        shortname : "heathens",
     }},
 { value : "Heat Waves by Glass Animals", 
         data : {
@@ -3172,6 +3280,7 @@ songs: [
         b_gs : " 34257",
         bvid : "",
         b_image : "'heat_waves_by_glass_animals_bass.png'",
+        shortname : "heatwaves",
     }},
 { value : "Hey Brother by Avicii", 
         data : {
@@ -3201,6 +3310,7 @@ songs: [
         b_gs : " 102367",
         bvid : "",
         b_image : "'hey_brother_by_avicii_bass.png'",
+        shortname : "heybrother",
     }},
 { value : "High Hopes by Panic! at the Disco", 
         data : {
@@ -3230,6 +3340,7 @@ songs: [
         b_gs : " 73666",
         bvid : "",
         b_image : "'high_hopes_by_panic_at_the_disco_bass.png'",
+        shortname : "highhopes",
     }},
 { value : "Highway Tune by Greta Van Fleet", 
         data : {
@@ -3259,6 +3370,7 @@ songs: [
         b_gs : " 94104",
         bvid : "",
         b_image : "'highway_tune_by_greta_van_fleet_bass.png'",
+        shortname : "highwaytune",
     }},
 { value : "Hold Me Closer by Elton John & Britney Spears", 
         data : {
@@ -3288,6 +3400,7 @@ songs: [
         b_gs : " 75871",
         bvid : "",
         b_image : "'hold_me_closer_by_elton_john__britney_spears_bass.png'",
+        shortname : "holdmecloser",
     }},
 { value : "Holiday by Green Day", 
         data : {
@@ -3317,6 +3430,7 @@ songs: [
         b_gs : " 144598",
         bvid : "",
         b_image : "'holiday_by_green_day_bass.png'",
+        shortname : "holiday",
     }},
 { value : "Hollaback Girl by Gwen Stefani", 
         data : {
@@ -3346,6 +3460,7 @@ songs: [
         b_gs : " 15261",
         bvid : "",
         b_image : "'hollaback_girl_by_gwen_stefani_bass.png'",
+        shortname : "hollabackgirl",
     }},
 { value : "HOT TO GO! by Chappell Roan", 
         data : {
@@ -3375,6 +3490,7 @@ songs: [
         b_gs : " 136418",
         bvid : "",
         b_image : "'hot_to_go_by_chappell_roan_bass.png'",
+        shortname : "hottogo",
     }},
 { value : "HUMBLE. by Kendrick Lamar", 
         data : {
@@ -3404,6 +3520,7 @@ songs: [
         b_gs : " 71907",
         bvid : "",
         b_image : "'humble_by_kendrick_lamar_bass.png'",
+        shortname : "humble",
     }},
 { value : "Hysteria by Muse", 
         data : {
@@ -3433,6 +3550,7 @@ songs: [
         b_gs : " 222178",
         bvid : "",
         b_image : "'hysteria_by_muse_bass.png'",
+        shortname : "hysteria",
     }},
 { value : "i by Kendrick Lamar", 
         data : {
@@ -3462,6 +3580,7 @@ songs: [
         b_gs : " 120321",
         bvid : "",
         b_image : "'i_by_kendrick_lamar_bass.png'",
+        shortname : "i",
     }},
 { value : "I Had Some Help by Post Malone ft. Morgan Wallen", 
         data : {
@@ -3491,6 +3610,7 @@ songs: [
         b_gs : " 108225",
         bvid : "",
         b_image : "'i_had_some_help_by_post_malone_ft_morgan_wallen_bass.png'",
+        shortname : "ihadsomehelp",
     }},
 { value : "I'm a Winner by Epic Games", 
         data : {
@@ -3520,6 +3640,7 @@ songs: [
         b_gs : " 64058",
         bvid : "",
         b_image : "'im_a_winner_by_epic_games_bass.png'",
+        shortname : "imawinner",
     }},
 { value : "Inferno Island (Molten Mix) by Epic Games", 
         data : {
@@ -3549,6 +3670,7 @@ songs: [
         b_gs : " 66438",
         bvid : "",
         b_image : "'inferno_island_molten_mix_by_epic_games_bass.png'",
+        shortname : "infernoisland",
     }},
 { value : "In The End by Linkin Park", 
         data : {
@@ -3578,6 +3700,7 @@ songs: [
         b_gs : " 120459",
         bvid : "",
         b_image : "'in_the_end_by_linkin_park_bass.png'",
+        shortname : "intheend",
     }},
 { value : "Into You by Ariana Grande", 
         data : {
@@ -3607,6 +3730,7 @@ songs: [
         b_gs : " 71686",
         bvid : "",
         b_image : "'into_you_by_ariana_grande_bass.png'",
+        shortname : "intoyou",
     }},
 { value : "I Still Haven't Found What I'm Looking For by U2", 
         data : {
@@ -3636,6 +3760,7 @@ songs: [
         b_gs : " 116795",
         bvid : "",
         b_image : "'i_still_havent_found_what_im_looking_for_by_u2_bass.png'",
+        shortname : "istillhaventfound",
     }},
 { value : "I Think I'm OKAY by mgk, YUNGBLUD & Travis Barker", 
         data : {
@@ -3665,6 +3790,7 @@ songs: [
         b_gs : " 52635",
         bvid : "",
         b_image : "'i_think_im_okay_by_mgk_yungblud__travis_barker_bass.png'",
+        shortname : "ithinkimokay",
     }},
 { value : "It Takes Two by Rob Base & DJ EZ Rock", 
         data : {
@@ -3694,6 +3820,7 @@ songs: [
         b_gs : " 13771",
         bvid : "",
         b_image : "'it_takes_two_by_rob_base__dj_ez_rock_bass.png'",
+        shortname : "ittakestwo",
     }},
 { value : "I Wanna Get Better by Bleachers", 
         data : {
@@ -3723,6 +3850,7 @@ songs: [
         b_gs : " 93283",
         bvid : "",
         b_image : "'i_wanna_get_better_by_bleachers_bass.png'",
+        shortname : "iwannagetbetter",
     }},
 { value : "I Wish by Skee-Lo", 
         data : {
@@ -3752,6 +3880,7 @@ songs: [
         b_gs : " 166916",
         bvid : "",
         b_image : "'i_wish_by_skeelo_bass.png'",
+        shortname : "iwish",
     }},
 { value : "Just A Girl by No Doubt", 
         data : {
@@ -3781,6 +3910,7 @@ songs: [
         b_gs : " 120027",
         bvid : "",
         b_image : "'just_a_girl_by_no_doubt_bass.png'",
+        shortname : "justagirl",
     }},
 { value : "Just Dance by Lady Gaga ft. Colby O'Donis", 
         data : {
@@ -3810,6 +3940,7 @@ songs: [
         b_gs : " 84323",
         bvid : "",
         b_image : "'just_dance_by_lady_gaga_ft_colby_odonis_bass.png'",
+        shortname : "justdance",
     }},
 { value : "Keep Poppin by Epic Games", 
         data : {
@@ -3839,6 +3970,7 @@ songs: [
         b_gs : " 70127",
         bvid : "",
         b_image : "'keep_poppin_by_epic_games_bass.png'",
+        shortname : "keeppoppin",
     }},
 { value : "Kids by MGMT", 
         data : {
@@ -3868,6 +4000,7 @@ songs: [
         b_gs : " 164384",
         bvid : "",
         b_image : "'kids_by_mgmt_bass.png'",
+        shortname : "kids",
     }},
 { value : "Killing In The Name by Rage Against The Machine", 
         data : {
@@ -3897,6 +4030,7 @@ songs: [
         b_gs : " 171358",
         bvid : "",
         b_image : "'killing_in_the_name_by_rage_against_the_machine_bass.png'",
+        shortname : "killinginthename",
     }},
 { value : "Kiss Me More by Doja Cat ft. SZA", 
         data : {
@@ -3926,6 +4060,7 @@ songs: [
         b_gs : " 39607",
         bvid : "",
         b_image : "'kiss_me_more_by_doja_cat_ft_sza_bass.png'",
+        shortname : "kissmemore",
     }},
 { value : "Less Than by Nine Inch Nails", 
         data : {
@@ -3955,6 +4090,7 @@ songs: [
         b_gs : " 134990",
         bvid : "",
         b_image : "'less_than_by_nine_inch_nails_bass.png'",
+        shortname : "lessthan",
     }},
 { value : "Let You Down by NF", 
         data : {
@@ -3984,6 +4120,7 @@ songs: [
         b_gs : " 24762",
         bvid : "",
         b_image : "'let_you_down_by_nf_bass.png'",
+        shortname : "letyoudown",
     }},
 { value : "My Songs Know What You Did In The Dark (Light Em Up) by Fall Out Boy", 
         data : {
@@ -4013,6 +4150,7 @@ songs: [
         b_gs : " 79659",
         bvid : "",
         b_image : "'my_songs_know_what_you_did_in_the_dark_light_em_up_by_fall_out_boy_bass.png'",
+        shortname : "lightemup",
     }},
 { value : "Like A G6 by Far East Movement ft. The Cataracs & DEV", 
         data : {
@@ -4042,6 +4180,7 @@ songs: [
         b_gs : " 41674",
         bvid : "",
         b_image : "'like_a_g6_by_far_east_movement_ft_the_cataracs__dev_bass.png'",
+        shortname : "likeag6",
     }},
 { value : "Lord of the Wasteland by Epic Games", 
         data : {
@@ -4071,6 +4210,7 @@ songs: [
         b_gs : " 169838",
         bvid : "",
         b_image : "'lord_of_the_wasteland_by_epic_games_bass.png'",
+        shortname : "lordofthewasteland",
     }},
 { value : "Lovin On Me by Jack Harlow", 
         data : {
@@ -4100,6 +4240,7 @@ songs: [
         b_gs : " 51069",
         bvid : "",
         b_image : "'lovin_on_me_by_jack_harlow_bass.png'",
+        shortname : "lovinonme",
     }},
 { value : "Lucid Dreams by Juice WRLD", 
         data : {
@@ -4129,6 +4270,7 @@ songs: [
         b_gs : " 60325",
         bvid : "",
         b_image : "'lucid_dreams_by_juice_wrld_bass.png'",
+        shortname : "luciddreams",
     }},
 { value : "LUNCH by Billie Eilish", 
         data : {
@@ -4158,6 +4300,7 @@ songs: [
         b_gs : " 56916",
         bvid : "",
         b_image : "'lunch_by_billie_eilish_bass.png'",
+        shortname : "lunch",
     }},
 { value : "Lux Æterna by Metallica", 
         data : {
@@ -4187,6 +4330,7 @@ songs: [
         b_gs : " 190121",
         bvid : "",
         b_image : "'lux_aeterna_by_metallica_bass.png'",
+        shortname : "luxaeterna",
     }},
 { value : "MakeDamnSure by Taking Back Sunday", 
         data : {
@@ -4216,6 +4360,7 @@ songs: [
         b_gs : " 134838",
         bvid : "",
         b_image : "'makedamnsure_by_taking_back_sunday_bass.png'",
+        shortname : "makedamnsure",
     }},
 { value : "Make It Known by Epic Games", 
         data : {
@@ -4245,6 +4390,7 @@ songs: [
         b_gs : " 60387",
         bvid : "",
         b_image : "'make_it_known_by_epic_games_bass.png'",
+        shortname : "makeitknown",
     }},
 { value : "Maps by Maroon 5", 
         data : {
@@ -4274,6 +4420,7 @@ songs: [
         b_gs : " 65176",
         bvid : "",
         b_image : "'maps_by_maroon_5_bass.png'",
+        shortname : "maps",
     }},
 { value : "March Of The Pigs by Nine Inch Nails", 
         data : {
@@ -4303,6 +4450,7 @@ songs: [
         b_gs : " 201278",
         bvid : "",
         b_image : "'march_of_the_pigs_by_nine_inch_nails_bass.png'",
+        shortname : "marchofthepigs",
     }},
 { value : "Master of Puppets by Metallica", 
         data : {
@@ -4332,6 +4480,7 @@ songs: [
         b_gs : " 421768",
         bvid : "",
         b_image : "'master_of_puppets_by_metallica_bass.png'",
+        shortname : "masterofpuppets",
     }},
 { value : "Me Too by Meghan Trainor", 
         data : {
@@ -4361,6 +4510,7 @@ songs: [
         b_gs : " 101470",
         bvid : "",
         b_image : "'me_too_by_meghan_trainor_bass.png'",
+        shortname : "metoo",
     }},
 { value : "Mi Gente by J. Balvin & Willy William", 
         data : {
@@ -4390,6 +4540,7 @@ songs: [
         b_gs : " 19308",
         bvid : "",
         b_image : "'mi_gente_by_j_balvin__willy_william_bass.png'",
+        shortname : "migente",
     }},
 { value : "Misery Business by Paramore", 
         data : {
@@ -4419,6 +4570,7 @@ songs: [
         b_gs : " 128759",
         bvid : "",
         b_image : "'misery_business_by_paramore_bass.png'",
+        shortname : "miserybusiness",
     }},
 { value : "Mood by 24kGoldn ft. iann dior", 
         data : {
@@ -4448,6 +4600,7 @@ songs: [
         b_gs : " 34661",
         bvid : "",
         b_image : "'mood_by_24kgoldn_ft_iann_dior_bass.png'",
+        shortname : "mood",
     }},
 { value : "Moves Like Jagger by Maroon 5 ft. Christina Aguilera", 
         data : {
@@ -4477,6 +4630,7 @@ songs: [
         b_gs : " 86738",
         bvid : "",
         b_image : "'moves_like_jagger_by_maroon_5_ft_christina_aguilera_bass.png'",
+        shortname : "moveslikejagger",
     }},
 { value : "Mr. Brightside by The Killers", 
         data : {
@@ -4506,6 +4660,7 @@ songs: [
         b_gs : " 150860",
         bvid : "",
         b_image : "'mr_brightside_by_the_killers_bass.png'",
+        shortname : "mrbrightside",
     }},
 { value : "my ex's best friend by mgk & blackbear", 
         data : {
@@ -4535,6 +4690,7 @@ songs: [
         b_gs : " 51083",
         bvid : "",
         b_image : "'my_exs_best_friend_by_mgk__blackbear_bass.png'",
+        shortname : "myexesbestfriend",
     }},
 { value : "My Oh My by Ava Max", 
         data : {
@@ -4564,6 +4720,7 @@ songs: [
         b_gs : " 42075",
         bvid : "",
         b_image : "'my_oh_my_by_ava_max_bass.png'",
+        shortname : "myohmy",
     }},
 { value : "Never Back Down by NickEh30", 
         data : {
@@ -4593,6 +4750,7 @@ songs: [
         b_gs : " 41464",
         bvid : "",
         b_image : "'never_back_down_by_nickeh30_bass.png'",
+        shortname : "nevergiveup",
     }},
 { value : "Next Semester by Twenty One Pilots", 
         data : {
@@ -4622,6 +4780,7 @@ songs: [
         b_gs : " 129187",
         bvid : "",
         b_image : "'next_semester_by_twenty_one_pilots_bass.png'",
+        shortname : "nextsemester",
     }},
 { value : "Nothing Else Matters by Metallica", 
         data : {
@@ -4651,6 +4810,7 @@ songs: [
         b_gs : " 95919",
         bvid : "",
         b_image : "'nothing_else_matters_by_metallica_bass.png'",
+        shortname : "nothingelsematters",
     }},
 { value : "Nothing's Alright by WitchGang", 
         data : {
@@ -4680,6 +4840,7 @@ songs: [
         b_gs : " 37935",
         bvid : "",
         b_image : "'nothings_alright_by_witchgang_bass.png'",
+        shortname : "nothingsalright",
     }},
 { value : "Numb by Linkin Park", 
         data : {
@@ -4709,6 +4870,7 @@ songs: [
         b_gs : " 31769",
         bvid : "",
         b_image : "'numb_by_linkin_park_bass.png'",
+        shortname : "numb",
     }},
 { value : "OG (Future Remix) by Epic Games", 
         data : {
@@ -4738,6 +4900,7 @@ songs: [
         b_gs : " 61815",
         bvid : "",
         b_image : "'og_future_remix_by_epic_games_bass.png'",
+        shortname : "ogfutureremix",
     }},
 { value : "OKI DOKI by Karol G", 
         data : {
@@ -4767,6 +4930,7 @@ songs: [
         b_gs : " 26795",
         bvid : "",
         b_image : "'oki_doki_by_karol_g_bass.png'",
+        shortname : "okidoki",
     }},
 { value : "One by Metallica", 
         data : {
@@ -4796,6 +4960,7 @@ songs: [
         b_gs : " 316177",
         bvid : "",
         b_image : "'one_by_metallica_bass.png'",
+        shortname : "one",
     }},
 { value : "Orbital Overload by Epic Games", 
         data : {
@@ -4825,6 +4990,7 @@ songs: [
         b_gs : " 38059",
         bvid : "",
         b_image : "'orbital_overload_by_epic_games_bass.png'",
+        shortname : "orbitaloverload",
     }},
 { value : "Oxytocin by Billie Eilish", 
         data : {
@@ -4854,6 +5020,7 @@ songs: [
         b_gs : " 82070",
         bvid : "",
         b_image : "'oxytocin_by_billie_eilish_bass.png'",
+        shortname : "oxytocin",
     }},
 { value : "Paint The Town Red by Doja Cat", 
         data : {
@@ -4883,6 +5050,7 @@ songs: [
         b_gs : " 36482",
         bvid : "",
         b_image : "'paint_the_town_red_by_doja_cat_bass.png'",
+        shortname : "paintthetownred",
     }},
 { value : "Panda by Desiigner", 
         data : {
@@ -4912,6 +5080,7 @@ songs: [
         b_gs : " 55205",
         bvid : "",
         b_image : "'panda_by_desiigner_bass.png'",
+        shortname : "panda",
     }},
 { value : "Paradise City by Guns N' Roses", 
         data : {
@@ -4941,6 +5110,7 @@ songs: [
         b_gs : " 258076",
         bvid : "",
         b_image : "'paradise_city_by_guns_n_roses_bass.png'",
+        shortname : "paradisecity",
     }},
 { value : "Party Rock Anthem by LMFAO ft. Lauren Bennett & GoonRock", 
         data : {
@@ -4970,6 +5140,7 @@ songs: [
         b_gs : " 98123",
         bvid : "",
         b_image : "'party_rock_anthem_by_lmfao_ft_lauren_bennett__goonrock_bass.png'",
+        shortname : "partyrockanthem",
     }},
 { value : "Pea Like Me by Epic Games", 
         data : {
@@ -4999,6 +5170,7 @@ songs: [
         b_gs : " 94932",
         bvid : "",
         b_image : "'pea_like_me_by_epic_games_bass.png'",
+        shortname : "pealikeme",
     }},
 { value : "Poison by Bell Biv DeVoe", 
         data : {
@@ -5028,6 +5200,7 @@ songs: [
         b_gs : " 111406",
         bvid : "",
         b_image : "'poison_by_bell_biv_devoe_bass.png'",
+        shortname : "poison",
     }},
 { value : "Poker Face by Lady Gaga  ", 
         data : {
@@ -5057,6 +5230,7 @@ songs: [
         b_gs : " 150908",
         bvid : "",
         b_image : "'poker_face_by_lady_gaga___bass.png'",
+        shortname : "pokerface",
     }},
 { value : "Pompeii by Bastille", 
         data : {
@@ -5086,6 +5260,7 @@ songs: [
         b_gs : " 107956",
         bvid : "",
         b_image : "'pompeii_by_bastille_bass.png'",
+        shortname : "pompeii",
     }},
 { value : "Popular  by The Weeknd, Madonna & Playboi Carti", 
         data : {
@@ -5115,6 +5290,7 @@ songs: [
         b_gs : " 28257",
         bvid : "",
         b_image : "'popular__by_the_weeknd_madonna__playboi_carti_bass.png'",
+        shortname : "popular",
     }},
 { value : "positions by Ariana Grande", 
         data : {
@@ -5144,6 +5320,7 @@ songs: [
         b_gs : " 44114",
         bvid : "",
         b_image : "'positions_by_ariana_grande_bass.png'",
+        shortname : "positions",
     }},
 { value : "PROVENZA (REMIX) by Karol G ft. Tiësto", 
         data : {
@@ -5173,6 +5350,7 @@ songs: [
         b_gs : " 54650",
         bvid : "",
         b_image : "'provenza_remix_by_karol_g_ft_tiesto_bass.png'",
+        shortname : "provenza",
     }},
 { value : "QLONA by Karol G ft. Peso Pluma", 
         data : {
@@ -5202,6 +5380,7 @@ songs: [
         b_gs : " 33229",
         bvid : "",
         b_image : "'qlona_by_karol_g_ft_peso_pluma_bass.png'",
+        shortname : "qlona",
     }},
 { value : "Rain On Me by Lady Gaga & Ariana Grande", 
         data : {
@@ -5231,6 +5410,7 @@ songs: [
         b_gs : " 60280",
         bvid : "",
         b_image : "'rain_on_me_by_lady_gaga__ariana_grande_bass.png'",
+        shortname : "rainonme",
     }},
 { value : "Replay by Iyaz", 
         data : {
@@ -5260,6 +5440,7 @@ songs: [
         b_gs : " 17055",
         bvid : "",
         b_image : "'replay_by_iyaz_bass.png'",
+        shortname : "replay",
     }},
 { value : "Ride the Lightning by Metallica", 
         data : {
@@ -5289,6 +5470,7 @@ songs: [
         b_gs : " 366391",
         bvid : "",
         b_image : "'ride_the_lightning_by_metallica_bass.png'",
+        shortname : "ridethelightning",
     }},
 { value : "Ride Wit Me by Nelly ft. City Spud", 
         data : {
@@ -5318,6 +5500,7 @@ songs: [
         b_gs : " 79686",
         bvid : "",
         b_image : "'ride_wit_me_by_nelly_ft_city_spud_bass.png'",
+        shortname : "ridewitme",
     }},
 { value : "Roses (Imanbek Remix) by SAINt JHN ", 
         data : {
@@ -5347,6 +5530,7 @@ songs: [
         b_gs : " 73801",
         bvid : "",
         b_image : "'roses_imanbek_remix_by_saint_jhn__bass.png'",
+        shortname : "roses",
     }},
 { value : "Ruby Soho by Rancid", 
         data : {
@@ -5376,6 +5560,7 @@ songs: [
         b_gs : " 91230",
         bvid : "",
         b_image : "'ruby_soho_by_rancid_bass.png'",
+        shortname : "rubysoho",
     }},
 { value : "Runaway by WitchGang", 
         data : {
@@ -5405,6 +5590,7 @@ songs: [
         b_gs : " 31480",
         bvid : "",
         b_image : "'runaway_by_witchgang_bass.png'",
+        shortname : "runaway",
     }},
 { value : "Run It by Epic Games", 
         data : {
@@ -5434,6 +5620,7 @@ songs: [
         b_gs : " 45152",
         bvid : "",
         b_image : "'run_it_by_epic_games_bass.png'",
+        shortname : "runit",
     }},
 { value : "Sabotage by Beastie Boys", 
         data : {
@@ -5463,6 +5650,7 @@ songs: [
         b_gs : " 135135",
         bvid : "",
         b_image : "'sabotage_by_beastie_boys_bass.png'",
+        shortname : "sabotage",
     }},
 { value : "Sad But True by Metallica", 
         data : {
@@ -5492,6 +5680,7 @@ songs: [
         b_gs : " 155834",
         bvid : "",
         b_image : "'sad_but_true_by_metallica_bass.png'",
+        shortname : "sadbuttrue",
     }},
 { value : "Sandstorm by Darude", 
         data : {
@@ -5521,6 +5710,7 @@ songs: [
         b_gs : " 206281",
         bvid : "",
         b_image : "'sandstorm_by_darude_bass.png'",
+        shortname : "sandstorm",
     }},
 { value : "Santeria by Sublime", 
         data : {
@@ -5550,6 +5740,7 @@ songs: [
         b_gs : " 116776",
         bvid : "",
         b_image : "'santeria_by_sublime_bass.png'",
+        shortname : "santeria",
     }},
 { value : "Savage by Megan Thee Stallion", 
         data : {
@@ -5579,6 +5770,7 @@ songs: [
         b_gs : " 34353",
         bvid : "",
         b_image : "'savage_by_megan_thee_stallion_bass.png'",
+        shortname : "savage",
     }},
 { value : "Save Your Tears by The Weeknd", 
         data : {
@@ -5608,6 +5800,7 @@ songs: [
         b_gs : " 126675",
         bvid : "",
         b_image : "'save_your_tears_by_the_weeknd_bass.png'",
+        shortname : "saveyourtears",
     }},
 { value : "Say So by Doja Cat", 
         data : {
@@ -5637,6 +5830,7 @@ songs: [
         b_gs : " 59790",
         bvid : "",
         b_image : "'say_so_by_doja_cat_bass.png'",
+        shortname : "sayso",
     }},
 { value : "Scenario by A Tribe Called Quest ft. Leaders Of The New School", 
         data : {
@@ -5666,6 +5860,7 @@ songs: [
         b_gs : " 64575",
         bvid : "",
         b_image : "'scenario_by_a_tribe_called_quest_ft_leaders_of_the_new_school_bass.png'",
+        shortname : "scenario",
     }},
 { value : "Seek & Destroy by Metallica", 
         data : {
@@ -5695,6 +5890,7 @@ songs: [
         b_gs : " 312404",
         bvid : "",
         b_image : "'seek__destroy_by_metallica_bass.png'",
+        shortname : "seekanddestroy",
     }},
 { value : "Seven Nation Army by The White Stripes", 
         data : {
@@ -5724,6 +5920,7 @@ songs: [
         b_gs : " 98503",
         bvid : "",
         b_image : "'seven_nation_army_by_the_white_stripes_bass.png'",
+        shortname : "sevennationarmy",
     }},
 { value : "Sexy And I Know It by LMFAO", 
         data : {
@@ -5753,6 +5950,7 @@ songs: [
         b_gs : " 163501",
         bvid : "",
         b_image : "'sexy_and_i_know_it_by_lmfao_bass.png'",
+        shortname : "sexyandiknowit",
     }},
 { value : "Shivers by Ed Sheeran", 
         data : {
@@ -5782,6 +5980,7 @@ songs: [
         b_gs : " 52369",
         bvid : "",
         b_image : "'shivers_by_ed_sheeran_bass.png'",
+        shortname : "shivers",
     }},
 { value : "Show Them Who We Are by Epic Games", 
         data : {
@@ -5811,6 +6010,7 @@ songs: [
         b_gs : " 70375",
         bvid : "",
         b_image : "'show_them_who_we_are_by_epic_games_bass.png'",
+        shortname : "showthemwhoweare",
     }},
 { value : "Side To Side by Ariana Grande ft. Nicki Minaj", 
         data : {
@@ -5840,6 +6040,7 @@ songs: [
         b_gs : " 81681",
         bvid : "",
         b_image : "'side_to_side_by_ariana_grande_ft_nicki_minaj_bass.png'",
+        shortname : "sidetoside",
     }},
 { value : "Silly Bros by Epic Games", 
         data : {
@@ -5869,6 +6070,7 @@ songs: [
         b_gs : " 21164",
         bvid : "",
         b_image : "'silly_bros_by_epic_games_bass.png'",
+        shortname : "sillybros",
     }},
 { value : "Single Soon by Selena Gomez", 
         data : {
@@ -5898,6 +6100,7 @@ songs: [
         b_gs : " 126807",
         bvid : "",
         b_image : "'single_soon_by_selena_gomez_bass.png'",
+        shortname : "singlesoon",
     }},
 { value : "Sky Surfer (Neon Rush Remix) by Epic Games", 
         data : {
@@ -5927,6 +6130,7 @@ songs: [
         b_gs : " 364570",
         bvid : "",
         b_image : "'sky_surfer_neon_rush_remix_by_epic_games_bass.png'",
+        shortname : "skysurfer",
     }},
 { value : "S.O.M.P. by Epic Games", 
         data : {
@@ -5956,6 +6160,7 @@ songs: [
         b_gs : " 149273",
         bvid : "",
         b_image : "'somp_by_epic_games_bass.png'",
+        shortname : "somp",
     }},
 { value : "Song 2 by Blur", 
         data : {
@@ -5985,6 +6190,7 @@ songs: [
         b_gs : " 48961",
         bvid : "",
         b_image : "'song_2_by_blur_bass.png'",
+        shortname : "song2",
     }},
 { value : "So What by P!nk", 
         data : {
@@ -6014,6 +6220,7 @@ songs: [
         b_gs : " 107069",
         bvid : "",
         b_image : "'so_what_by_pnk_bass.png'",
+        shortname : "sowhat",
     }},
 { value : "Starships by Nicki Minaj", 
         data : {
@@ -6043,6 +6250,7 @@ songs: [
         b_gs : " 77451",
         bvid : "",
         b_image : "'starships_by_nicki_minaj_bass.png'",
+        shortname : "starships",
     }},
 { value : "Stick Season by Noah Kahan", 
         data : {
@@ -6072,6 +6280,7 @@ songs: [
         b_gs : " 39818",
         bvid : "",
         b_image : "'stick_season_by_noah_kahan_bass.png'",
+        shortname : "stickseason",
     }},
 { value : "Stitches by Shawn Mendes", 
         data : {
@@ -6101,6 +6310,7 @@ songs: [
         b_gs : " 55536",
         bvid : "",
         b_image : "'stitches_by_shawn_mendes_bass.png'",
+        shortname : "stitches",
     }},
 { value : "Streets Ignite by Epic Games", 
         data : {
@@ -6130,6 +6340,7 @@ songs: [
         b_gs : " 69468",
         bvid : "",
         b_image : "'streets_ignite_by_epic_games_bass.png'",
+        shortname : "streetsignite",
     }},
 { value : "Stressed Out by Twenty One Pilots", 
         data : {
@@ -6159,6 +6370,7 @@ songs: [
         b_gs : " 57920",
         bvid : "",
         b_image : "'stressed_out_by_twenty_one_pilots_bass.png'",
+        shortname : "stressedout",
     }},
 { value : "Stronger (What Doesn't Kill You) by Kelly Clarkson", 
         data : {
@@ -6188,6 +6400,7 @@ songs: [
         b_gs : " 151943",
         bvid : "",
         b_image : "'stronger_what_doesnt_kill_you_by_kelly_clarkson_bass.png'",
+        shortname : "stronger",
     }},
 { value : "Stupid Love by Lady Gaga", 
         data : {
@@ -6217,6 +6430,7 @@ songs: [
         b_gs : " 166419",
         bvid : "",
         b_image : "'stupid_love_by_lady_gaga_bass.png'",
+        shortname : "stupidlove",
     }},
 { value : "Sucker by Jonas Brothers", 
         data : {
@@ -6246,6 +6460,7 @@ songs: [
         b_gs : " 73211",
         bvid : "",
         b_image : "'sucker_by_jonas_brothers_bass.png'",
+        shortname : "sucker",
     }},
 { value : "Suddenly I See by KT Tunstall", 
         data : {
@@ -6275,6 +6490,7 @@ songs: [
         b_gs : " 108218",
         bvid : "",
         b_image : "'suddenly_i_see_by_kt_tunstall_bass.png'",
+        shortname : "suddenlyisee",
     }},
 { value : "Super Freak by Rick James", 
         data : {
@@ -6304,6 +6520,7 @@ songs: [
         b_gs : " 86629",
         bvid : "",
         b_image : "'super_freak_by_rick_james_bass.png'",
+        shortname : "superfreak",
     }},
 { value : "Surround Sound by JID ft. 21 Savage & Baby Tate", 
         data : {
@@ -6333,6 +6550,7 @@ songs: [
         b_gs : " 69409",
         bvid : "",
         b_image : "'surround_sound_by_jid_ft_21_savage__baby_tate_bass.png'",
+        shortname : "surroundsound",
     }},
 { value : "Sweet Child O' Mine by Guns N' Roses ", 
         data : {
@@ -6362,6 +6580,7 @@ songs: [
         b_gs : " 192432",
         bvid : "",
         b_image : "'sweet_child_o_mine_by_guns_n_roses__bass.png'",
+        shortname : "sweetchildomine",
     }},
 { value : "Sweet Victory by Epic Games", 
         data : {
@@ -6391,6 +6610,7 @@ songs: [
         b_gs : " 97326",
         bvid : "",
         b_image : "'sweet_victory_by_epic_games_bass.png'",
+        shortname : "sweetvictory",
     }},
 { value : "Swim Free by Epic Games", 
         data : {
@@ -6420,6 +6640,7 @@ songs: [
         b_gs : " 105610",
         bvid : "",
         b_image : "'swim_free_by_epic_games_bass.png'",
+        shortname : "swimfree",
     }},
 { value : "Switch Up by Epic Games", 
         data : {
@@ -6449,6 +6670,7 @@ songs: [
         b_gs : " 51735",
         bvid : "",
         b_image : "'switch_up_by_epic_games_bass.png'",
+        shortname : "switchup",
     }},
 { value : "Take Me Higher by Epic Games", 
         data : {
@@ -6478,6 +6700,7 @@ songs: [
         b_gs : " 60642",
         bvid : "",
         b_image : "'take_me_higher_by_epic_games_bass.png'",
+        shortname : "takemehigher",
     }},
 { value : "Take My Breath by The Weeknd", 
         data : {
@@ -6507,6 +6730,7 @@ songs: [
         b_gs : " 64865",
         bvid : "",
         b_image : "'take_my_breath_by_the_weeknd_bass.png'",
+        shortname : "takemybreath",
     }},
 { value : "Take Over Control by Afrojack ft. Eva Simmons", 
         data : {
@@ -6536,6 +6760,7 @@ songs: [
         b_gs : " 74491",
         bvid : "",
         b_image : "'take_over_control_by_afrojack_ft_eva_simmons_bass.png'",
+        shortname : "takeovercontrol",
     }},
 { value : "the boy is mine by Ariana Grande", 
         data : {
@@ -6565,6 +6790,7 @@ songs: [
         b_gs : " 43337",
         bvid : "",
         b_image : "'the_boy_is_mine_by_ariana_grande_bass.png'",
+        shortname : "theboyismine",
     }},
 { value : "The Boys Are Back In Town by Thin Lizzy", 
         data : {
@@ -6594,6 +6820,7 @@ songs: [
         b_gs : " 230440",
         bvid : "",
         b_image : "'the_boys_are_back_in_town_by_thin_lizzy_bass.png'",
+        shortname : "theboysareback",
     }},
 { value : "The Claw by Epic Games", 
         data : {
@@ -6623,6 +6850,7 @@ songs: [
         b_gs : " 85079",
         bvid : "",
         b_image : "'the_claw_by_epic_games_bass.png'",
+        shortname : "theclaw",
     }},
 { value : "THE DINER by Billie Eilish", 
         data : {
@@ -6652,6 +6880,7 @@ songs: [
         b_gs : " 34621",
         bvid : "",
         b_image : "'the_diner_by_billie_eilish_bass.png'",
+        shortname : "thediner",
     }},
 { value : "The Final Countdown by Europe", 
         data : {
@@ -6681,6 +6910,7 @@ songs: [
         b_gs : " 246635",
         bvid : "",
         b_image : "'the_final_countdown_by_europe_bass.png'",
+        shortname : "thefinalcountdown",
     }},
 { value : "The Hand That Feeds by Nine Inch Nails", 
         data : {
@@ -6710,6 +6940,7 @@ songs: [
         b_gs : " 106403",
         bvid : "",
         b_image : "'the_hand_that_feeds_by_nine_inch_nails_bass.png'",
+        shortname : "thehandthatfeeds",
     }},
 { value : "The Hills by The Weeknd", 
         data : {
@@ -6739,6 +6970,7 @@ songs: [
         b_gs : " 65860",
         bvid : "",
         b_image : "'the_hills_by_the_weeknd_bass.png'",
+        shortname : "thehills",
     }},
 { value : "The Hunting Ground by Epic Games", 
         data : {
@@ -6768,6 +7000,7 @@ songs: [
         b_gs : " 57404",
         bvid : "",
         b_image : "'the_hunting_ground_by_epic_games_bass.png'",
+        shortname : "thehuntingground",
     }},
 { value : "The Middle by Zedd, Maren Morris & Grey", 
         data : {
@@ -6797,6 +7030,7 @@ songs: [
         b_gs : " 32839",
         bvid : "",
         b_image : "'the_middle_by_zedd_maren_morris__grey_bass.png'",
+        shortname : "themiddle",
     }},
 { value : "The Middle by Jimmy Eat World", 
         data : {
@@ -6826,6 +7060,7 @@ songs: [
         b_gs : " 131302",
         bvid : "",
         b_image : "'the_middle_by_jimmy_eat_world_bass.png'",
+        shortname : "themiddle2",
     }},
 { value : "The Night Porter by Epic Games", 
         data : {
@@ -6855,6 +7090,7 @@ songs: [
         b_gs : " 91710",
         bvid : "",
         b_image : "'the_night_porter_by_epic_games_bass.png'",
+        shortname : "thenightporter",
     }},
 { value : "The Nights by Avicii", 
         data : {
@@ -6884,6 +7120,7 @@ songs: [
         b_gs : " 30296",
         bvid : "",
         b_image : "'the_nights_by_avicii_bass.png'",
+        shortname : "thenights",
     }},
 { value : "Therefore I Am by Billie Eilish", 
         data : {
@@ -6913,6 +7150,7 @@ songs: [
         b_gs : " 67418",
         bvid : "",
         b_image : "'therefore_i_am_by_billie_eilish_bass.png'",
+        shortname : "thereforeiam",
     }},
 { value : "The Search by NF", 
         data : {
@@ -6942,6 +7180,7 @@ songs: [
         b_gs : " 96812",
         bvid : "",
         b_image : "'the_search_by_nf_bass.png'",
+        shortname : "thesearch",
     }},
 { value : "The Unforgiven by Metallica", 
         data : {
@@ -6971,6 +7210,7 @@ songs: [
         b_gs : " 145737",
         bvid : "",
         b_image : "'the_unforgiven_by_metallica_bass.png'",
+        shortname : "theunforgiven",
     }},
 { value : "The Way Life Goes by Lil Uzi Vert ft. Oh Wonder", 
         data : {
@@ -7000,6 +7240,7 @@ songs: [
         b_gs : " 12011",
         bvid : "",
         b_image : "'the_way_life_goes_by_lil_uzi_vert_ft_oh_wonder_bass.png'",
+        shortname : "thewawylifegoes",
     }},
 { value : "This Is How We Do It by Montell Jordan", 
         data : {
@@ -7029,6 +7270,7 @@ songs: [
         b_gs : " 65355",
         bvid : "",
         b_image : "'this_is_how_we_do_it_by_montell_jordan_bass.png'",
+        shortname : "thisishowwedoit",
     }},
 { value : "Thunder by Imagine Dragons", 
         data : {
@@ -7058,6 +7300,7 @@ songs: [
         b_gs : " 107396",
         bvid : "",
         b_image : "'thunder_by_imagine_dragons_bass.png'",
+        shortname : "thunder",
     }},
 { value : "Timeless by WitchGang", 
         data : {
@@ -7087,6 +7330,7 @@ songs: [
         b_gs : " 43865",
         bvid : "",
         b_image : "'timeless_by_witchgang_bass.png'",
+        shortname : "timeless",
     }},
 { value : "Tití Me Preguntó by Bad Bunny", 
         data : {
@@ -7116,6 +7360,7 @@ songs: [
         b_gs : " 48761",
         bvid : "",
         b_image : "'titi_me_pregunto_by_bad_bunny_bass.png'",
+        shortname : "titimepregunto",
     }},
 { value : "Too Sweet by Hozier", 
         data : {
@@ -7145,6 +7390,7 @@ songs: [
         b_gs : " 89643",
         bvid : "",
         b_image : "'too_sweet_by_hozier_bass.png'",
+        shortname : "toosweet",
     }},
 { value : "Toxicity by System Of A Down", 
         data : {
@@ -7174,6 +7420,7 @@ songs: [
         b_gs : " 168138",
         bvid : "",
         b_image : "'toxicity_by_system_of_a_down_bass.png'",
+        shortname : "toxicity",
     }},
 { value : "t r a n s p a r e n t s o u l by WILLOW ft. Travis Barker", 
         data : {
@@ -7203,6 +7450,7 @@ songs: [
         b_gs : " 100193",
         bvid : "",
         b_image : "'t_r_a_n_s_p_a_r_e_n_t_s_o_u_l_by_willow_ft_travis_barker_bass.png'",
+        shortname : "transparentsoul",
     }},
 { value : "Tusa by Karol G ft. Nicki Minaj", 
         data : {
@@ -7232,6 +7480,7 @@ songs: [
         b_gs : " 58548",
         bvid : "",
         b_image : "'tusa_by_karol_g_ft_nicki_minaj_bass.png'",
+        shortname : "tusa",
     }},
 { value : "Unsainted by Slipknot", 
         data : {
@@ -7261,6 +7510,7 @@ songs: [
         b_gs : " 228195",
         bvid : "",
         b_image : "'unsainted_by_slipknot_bass.png'",
+        shortname : "unsainted",
     }},
 { value : "Uptown Funk by Mark Ronson ft. Bruno Mars", 
         data : {
@@ -7290,6 +7540,7 @@ songs: [
         b_gs : " 103043",
         bvid : "",
         b_image : "'uptown_funk_by_mark_ronson_ft_bruno_mars_bass.png'",
+        shortname : "uptownfunk",
     }},
 { value : "vampire by Olivia Rodrigo", 
         data : {
@@ -7319,6 +7570,7 @@ songs: [
         b_gs : " 97554",
         bvid : "",
         b_image : "'vampire_by_olivia_rodrigo_bass.png'",
+        shortname : "vampire",
     }},
 { value : "Walk Em Down by NLE Choppa ft. Roddy Ricch", 
         data : {
@@ -7348,6 +7600,7 @@ songs: [
         b_gs : " 44300",
         bvid : "",
         b_image : "'walk_em_down_by_nle_choppa_ft_roddy_ricch_bass.png'",
+        shortname : "walkemdown",
     }},
 { value : "Way Too Fast by Epic Games", 
         data : {
@@ -7377,6 +7630,7 @@ songs: [
         b_gs : " 55844",
         bvid : "",
         b_image : "'way_too_fast_by_epic_games_bass.png'",
+        shortname : "waytoofast",
     }},
 { value : "Welcome to Paradise by Green Day", 
         data : {
@@ -7406,6 +7660,7 @@ songs: [
         b_gs : " 196186",
         bvid : "",
         b_image : "'welcome_to_paradise_by_green_day_bass.png'",
+        shortname : "welcometoparadise",
     }},
 { value : "Welcome To The Jungle by Guns N' Roses", 
         data : {
@@ -7435,6 +7690,7 @@ songs: [
         b_gs : " 190597",
         bvid : "",
         b_image : "'welcome_to_the_jungle_by_guns_n_roses_bass.png'",
+        shortname : "welcometothejungle",
     }},
 { value : "We Like To Party! (The Vengabus) by Vengaboys", 
         data : {
@@ -7464,6 +7720,7 @@ songs: [
         b_gs : " 60219",
         bvid : "",
         b_image : "'we_like_to_party_the_vengabus_by_vengaboys_bass.png'",
+        shortname : "weliketoparty",
     }},
 { value : "What Do You Mean? by Justin Bieber", 
         data : {
@@ -7493,6 +7750,7 @@ songs: [
         b_gs : " 36541",
         bvid : "",
         b_image : "'what_do_you_mean?_by_justin_bieber_bass.png'",
+        shortname : "whatdoyoumean",
     }},
 { value : "What I Got by Sublime", 
         data : {
@@ -7522,6 +7780,7 @@ songs: [
         b_gs : " 91768",
         bvid : "",
         b_image : "'what_i_got_by_sublime_bass.png'",
+        shortname : "whatigot",
     }},
 { value : "What Is Love by Haddaway", 
         data : {
@@ -7551,6 +7810,7 @@ songs: [
         b_gs : " 103298",
         bvid : "",
         b_image : "'what_is_love_by_haddaway_bass.png'",
+        shortname : "whatislove",
     }},
 { value : "What's My Age Again? by blink-182", 
         data : {
@@ -7580,6 +7840,7 @@ songs: [
         b_gs : " 103105",
         bvid : "",
         b_image : "'whats_my_age_again?_by_blink182_bass.png'",
+        shortname : "whatsmyageagain",
     }},
 { value : "WHATS POPPIN by Jack Harlow", 
         data : {
@@ -7609,6 +7870,7 @@ songs: [
         b_gs : " 18256",
         bvid : "",
         b_image : "'whats_poppin_by_jack_harlow_bass.png'",
+        shortname : "whatspoppin",
     }},
 { value : "Whenever, Wherever by Shakira", 
         data : {
@@ -7638,6 +7900,7 @@ songs: [
         b_gs : " 93176",
         bvid : "",
         b_image : "'whenever_wherever_by_shakira_bass.png'",
+        shortname : "wheneverwherever",
     }},
 { value : "When I Come Around by Green Day", 
         data : {
@@ -7667,6 +7930,7 @@ songs: [
         b_gs : " 127662",
         bvid : "",
         b_image : "'when_i_come_around_by_green_day_bass.png'",
+        shortname : "whenicomearound",
     }},
 { value : "Wherever I May Roam by Metallica", 
         data : {
@@ -7696,6 +7960,7 @@ songs: [
         b_gs : " 210138",
         bvid : "",
         b_image : "'wherever_i_may_roam_by_metallica_bass.png'",
+        shortname : "whereverimayroam",
     }},
 { value : "Winterfest Wish by Epic Games", 
         data : {
@@ -7725,6 +7990,7 @@ songs: [
         b_gs : " 74498",
         bvid : "",
         b_image : "'winterfest_wish_by_epic_games_bass.png'",
+        shortname : "winterfestwish",
     }},
 { value : "With Or Without You by U2", 
         data : {
@@ -7754,6 +8020,7 @@ songs: [
         b_gs : " 166958",
         bvid : "",
         b_image : "'with_or_without_you_by_u2_bass.png'",
+        shortname : "withorwithoutyou",
     }},
 { value : "Wolves by Selena Gomez w/ Marshmello", 
         data : {
@@ -7783,6 +8050,7 @@ songs: [
         b_gs : " 71544",
         bvid : "",
         b_image : "'wolves_by_selena_gomez_w_marshmello_bass.png'",
+        shortname : "wolves",
     }},
 { value : "Woman by Doja Cat", 
         data : {
@@ -7812,6 +8080,7 @@ songs: [
         b_gs : " 35844",
         bvid : "",
         b_image : "'woman_by_doja_cat_bass.png'",
+        shortname : "woman",
     }},
 { value : "Would? by Alice In Chains", 
         data : {
@@ -7841,6 +8110,7 @@ songs: [
         b_gs : " 193247",
         bvid : "",
         b_image : "'would?_by_alice_in_chains_bass.png'",
+        shortname : "would",
     }},
 { value : "X Gon' Give It To Ya by DMX", 
         data : {
@@ -7870,6 +8140,7 @@ songs: [
         b_gs : " 48167",
         bvid : "",
         b_image : "'x_gon_give_it_to_ya_by_dmx_bass.png'",
+        shortname : "xgongiveittoya",
     }},
 { value : "XO Tour Llif3  by Lil Uzi Vert", 
         data : {
@@ -7899,6 +8170,7 @@ songs: [
         b_gs : " 63761",
         bvid : "",
         b_image : "'xo_tour_llif3__by_lil_uzi_vert_bass.png'",
+        shortname : "xotourlif3",
     }},
 { value : "yes, and? by Ariana Grande", 
         data : {
@@ -7928,6 +8200,7 @@ songs: [
         b_gs : " 67770",
         bvid : "",
         b_image : "'yes_and?_by_ariana_grande_bass.png'",
+        shortname : "yesand",
     }},
 { value : "You Don't Know Me by Epic Games", 
         data : {
@@ -7957,6 +8230,7 @@ songs: [
         b_gs : " 78503",
         bvid : "",
         b_image : "'you_dont_know_me_by_epic_games_bass.png'",
+        shortname : "youdontknowme",
     }},
 { value : "YOU DON'T KNOW WHAT YOU'VE GOT by blink-182", 
         data : {
@@ -7986,6 +8260,7 @@ songs: [
         b_gs : " 115294",
         bvid : "",
         b_image : "'you_dont_know_what_youve_got_by_blink182_bass.png'",
+        shortname : "youdontknowwhatyouvegot",
     }},
 { value : "Youngblood by 5 Seconds Of Summer", 
         data : {
@@ -8015,6 +8290,7 @@ songs: [
         b_gs : " 79938",
         bvid : "",
         b_image : "'youngblood_by_5_seconds_of_summer_bass.png'",
+        shortname : "youngblood",
     }},
 { value : "You're All Mine by Epic Games", 
         data : {
@@ -8044,6 +8320,7 @@ songs: [
         b_gs : " 105831",
         bvid : "",
         b_image : "'youre_all_mine_by_epic_games_bass.png'",
+        shortname : "youreallmine",
     }},
 { value : "Your Love (9pm) by ATB, Topic, A7S", 
         data : {
@@ -8073,6 +8350,7 @@ songs: [
         b_gs : " 37994",
         bvid : "",
         b_image : "'your_love_9pm_by_atb_topic_a7s_bass.png'",
+        shortname : "yourlove9pm",
     }},
 { value : "Zombie by The Cranberries", 
         data : {
@@ -8102,6 +8380,6 @@ songs: [
         b_gs : " 156956",
         bvid : "",
         b_image : "'zombie_by_the_cranberries_bass.png'",
+        shortname : "zombie",
     }},
-
 ]};
