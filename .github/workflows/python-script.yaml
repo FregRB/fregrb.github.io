@@ -33,3 +33,17 @@ jobs:
       run: |
         chmod +x process_songs.sh
         ./process_songs.sh
+
+            - name: Save output files
+      run: |
+        mkdir -p output
+        mv final_output.txt output/
+        mv paths output/
+
+    - name: Commit and push changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        author_name: 'github-actions'
+        author_email: 'actions@github.com'
+        message: 'Add final_output.txt and paths folder'
+        add: 'output/*'
