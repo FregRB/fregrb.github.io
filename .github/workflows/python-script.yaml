@@ -29,7 +29,7 @@ jobs:
 
       # Run the Python script
       - name: Run the script
-        run: python path/to/your_script.py  # Replace with the actual path to your Python script
+        run: python scripts/all.py  # Replace with the actual path to your Python script
 
       # Optional: Save output files as artifacts (e.g., the decrypted .mid files and .yml files)
       - name: Upload decrypted MIDI files
