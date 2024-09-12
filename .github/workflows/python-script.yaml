@@ -34,7 +34,7 @@ jobs:
         chmod +x process_songs.sh
         ./process_songs.sh
 
-            - name: Save output files
+    - name: Save output files
       run: |
         mkdir -p output
         mv final_output.txt output/
