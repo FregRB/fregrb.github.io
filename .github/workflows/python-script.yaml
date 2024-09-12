@@ -41,8 +41,8 @@ jobs:
         mv paths output/
 
     - name: Commit files
-  uses: EndBug/add-and-commit@v9
-  with:
-    github_token: ${{ secrets.GH_PAT }}
-    add: 'final_output.txt paths'
-    message: 'Add final_output.txt and paths folder'
+      uses: EndBug/add-and-commit@v9
+      with:
+        github_token: ${{ secrets.GH_PAT }}
+        add: 'final_output.txt paths'
+        message: 'Add final_output.txt and paths folder'
