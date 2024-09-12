@@ -47,3 +47,4 @@ jobs:
         author_email: 'actions@github.com'
         message: 'Add final_output.txt and paths folder'
         add: 'output/*'
+        token: ${{ secrets.GH_PAT }}  # Use the PAT stored in GitHub secrets
