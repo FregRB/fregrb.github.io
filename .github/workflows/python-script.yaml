@@ -1,45 +1,35 @@
-name: Run Python Script
+name: Python MIDI Decrypt and Song Processing
 
 on:
   push:
     branches:
-      - main  # Change this to the branch you want to trigger the action on
-  workflow_dispatch:  # Allows you to manually trigger the workflow
+      - main
 
 jobs:
-  run-python-script:
-    runs-on: ubuntu-latest
+  decrypt-and-process:
+    runs-on: macos-latest
 
     steps:
-      # Checkout the code from the repository
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      # Set up Python 3.x
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.x'  # Replace with your required Python version
-
-      # Install dependencies (requests, mido, etc.)
-      - name: Install dependencies
-        run: |
+    - name: Set up Python 3
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+    
+          # Install dependencies (requests, mido, etc.)
+    - name: Install dependencies
+      run: |
           python -m pip install --upgrade pip
           pip install requests mido pycryptodome 
 
       # Run the Python script
-      - name: Run the script
-        run: python scripts/all.py  # Replace with the actual path to your Python script
+    - name: Run the script
+      run: python scripts/all.py  # Replace with the actual path to your Python script
 
-      # Optional: Save output files as artifacts (e.g., the decrypted .mid files and .yml files)
-      - name: Upload decrypted MIDI files
-        uses: actions/upload-artifact@v3
-        with:
-          name: decrypted-midi-files
-          path: "**/*.mid"  # Adjust if your MIDI files are stored in different paths
-
-      - name: Upload song metadata
-        uses: actions/upload-artifact@v3
-        with:
-          name: song-metadata
-          path: "**/song.yml"  # Adjust based on where the .yml files are saved
+  
+    - name: Run Song Processing Script
+      run: |
+        chmod +x process_songs.sh
+        ./process_songs.sh
