@@ -596,8 +596,8 @@ function SetlistSelect(songIndex) {
 }
 
 async function GetGuitarLeaderboard(songId) {
-  // const data = await fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`).then(response => response.json());
-  fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`)
+  // const data = await fetch(`https://raw.githubusercontent.com/mattfreg/FNF_ProLeaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`).then(response => response.json());
+  fetch(`https://raw.githubusercontent.com/mattfreg/FNF_ProLeaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralGuitar_0.json`)
     .then(response => response.json())
     .then(data => {
       if (Array.isArray(data.entries)) {
@@ -612,8 +612,8 @@ async function GetGuitarLeaderboard(songId) {
 }
 
 async function GetBassLeaderboard(songId) {
-  //https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/masterofpuppets/Solo_PeripheralBass_0.json
-  fetch(`https://raw.githubusercontent.com/FNLookup/festival-leaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralBass_0.json`)
+  //https://raw.githubusercontent.com/mattfreg/FNF_ProLeaderboards/main/leaderboards/season5/masterofpuppets/Solo_PeripheralBass_0.json
+  fetch(`https://raw.githubusercontent.com/mattfreg/FNF_ProLeaderboards/main/leaderboards/season5/${songId}/Solo_PeripheralBass_0.json`)
     .then(response => response.json())
     .then(data => {
       if (Array.isArray(data.entries)) {
