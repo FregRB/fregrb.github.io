@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Search for a Song</h1>
+        <div class="search-box">
+            <label for="song-search" hidden>Enter song name:</label>
+            <input type="text" id="song-search" placeholder="Search for a song..." oninput="showSuggestions()">
+            <div class="suggestions" id="suggestions"></div>
+        </div>
+
+        <div id="song-details" class="song-details">
+            <!-- Song details will be displayed here -->
+        </div>
+
+        <div class="gpath-container">
+            <button id="toggle-g-image-btn" class="btn btn-primary" style="display: none;">Show Path Image</button>
+            <div id="g-image-box" style="display: none;">
+                <img id="g-image" class="gpImage" alt="Guitar Path Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="fnpv.js"></script>
+    <script>
+        function showSuggestions() {
+            const searchValue = document.getElementById('song-search').value.toLowerCase();
+            const suggestionsDiv = document.getElementById('suggestions');
+            suggestionsDiv.innerHTML = '';  // Clear previous suggestions
+
+            if (searchValue) {
+                // Filter songs based on search input
+                const filteredSongs = songs.filter(song => song.value.toLowerCase().includes(searchValue));
+
+                // Show suggestions
+                filteredSongs.forEach(song => {
+                    const suggestionItem = document.createElement('div');
+                    suggestionItem.textContent = song.value;
+                    suggestionItem.onclick = () => selectSong(song);
+                    suggestionsDiv.appendChild(suggestionItem);
+                });
+            } else {
+                // Hide the path image when search input is empty
+                document.getElementById('g-image-box').style.display = 'none';
+                document.getElementById('toggle-g-image-btn').style.display = 'none';
+            }
+        }
+
+        function hideSuggestions() {
+            document.getElementById('suggestions').style.display = 'none';
+        }
+
+        function showSuggestions() {
+            document.getElementById('suggestions').style.display = 'block';
+        }
+
+        document.getElementById('song-search').addEventListener('input', function () {
+            var input = this.value.toLowerCase();
+            var suggestions = document.getElementById('suggestions');
+            suggestions.innerHTML = '';
+            if (input.length > 0) {
+                var filteredSongs = songs.filter(song => song.value.toLowerCase().includes(input));
+                filteredSongs.forEach(song => {
+                    var div = document.createElement('div');
+                    div.textContent = song.value;
+                    div.addEventListener('click', function () {
+                        selectSong(song);
+                    });
+                    suggestions.appendChild(div);
+                });
+                showSuggestions();
+            } else {
+                hideSuggestions();
+                // Hide the path image when search input is empty
+                document.getElementById('g-image-box').style.display = 'none';
+                document.getElementById('toggle-g-image-btn').style.display = 'none';
+            }
+        });
+
+        document.addEventListener('click', function (event) {
+            var searchInput = document.getElementById('song-search');
+            var suggestionsBox = document.getElementById('suggestions');
+            if (!searchInput.contains(event.target) && !suggestionsBox.contains(event.target)) {
+                hideSuggestions();
+            }
+        });
+
+        document.getElementById('song-search').addEventListener('click', function (event) {
+            event.stopPropagation(); // Prevent click event from propagating to document
+            showSuggestions();
+        });
+
+        function selectSong(song) {
+            const songDetailsDiv = document.getElementById('song-details');
+            const suggestionsDiv = document.getElementById('suggestions');
+            const searchBox = document.getElementById('song-search');
+
+            searchBox.value = song.value;
+            suggestionsDiv.innerHTML = '';
+            
+            const formattedGpath = song.data.gpath.replace(/, /g, '<br>');
+            const gImagePath = 'paths/' + song.data.g_image.replace(/'/g, '');
+
+            const songData = `
+                <h2>${song.value}</h2>
+                <p>Score: ${song.data.gscore}</p>
+                <div class="gpath-box">
+                    <strong>Guitar Path:</strong> <br>
+                    ${formattedGpath}
+                </div>
+            `;
+            songDetailsDiv.innerHTML = songData;
+            
+            // Show the "Show Path Image" button and set its event listener
+            document.getElementById('toggle-g-image-btn').style.display = 'block';
+            document.getElementById('toggle-g-image-btn').onclick = function() {
+                const image = document.getElementById('g-image');
+                const isVisible = image.style.display === 'block';
+                image.style.display = isVisible ? 'none' : 'block';
+                this.textContent = isVisible ? 'Show Path Image' : 'Hide Path Image';
+            };
+            
+            // Show the path image box
+            const gImageBox = document.getElementById('g-image-box');
+            gImageBox.style.display = 'block';
+            const image = document.getElementById('g-image');
+            image.src = gImagePath;
+            image.style.display = 'none'; // Start hidden
+        }
+    </script>
+</body>
+</html>
