@@ -2654,28 +2654,38 @@ if (showUsername) {
 		platformDiv.innerHTML = platformElements;
 	}
 
-	// Render badges
-	if (showBadges) {
-		badgeListDiv.innerHTML = "";
+// Render badges
+if (showBadges) {
+    badgeListDiv.innerHTML = "";
 
-		if (data.isModerator) {
-			const badge = new Image();
-			badge.src = `icons/badges/youtube-moderator.svg`;
-			badge.style.filter = `invert(100%)`;
-			badge.style.opacity = 0.8;
-			badge.classList.add("badge");
-			badgeListDiv.appendChild(badge);
-		}
+    // Moderator badge
+    if (data.isModerator) {
+        const badge = new Image();
+        badge.src = `icons/badges/youtube-moderator.svg`;
+        badge.style.filter = `invert(100%)`;
+        badge.style.opacity = 0.8;
+        badge.classList.add("badge");
+        badgeListDiv.appendChild(badge);
+    }
 
-		for (i in data.userBadges) {
-			if (data.userBadges[i].type == 'image') {
-				const badge = new Image();
-				badge.src = data.userBadges[i].url;
-				badge.classList.add("badge");
-				badgeListDiv.appendChild(badge);
-			}
-		}
-	}
+    // User badges
+    for (let i in data.userBadges) {
+        if (data.userBadges[i].type === 'image') {
+            const badge = new Image();
+            badge.src = data.userBadges[i].url;
+            badge.classList.add("badge");
+            badgeListDiv.appendChild(badge);
+        }
+    }
+
+    // "Not following" badge
+    if (typeof data.isFollower !== "undefined" && !data.isFollower) {
+        const badge = new Image();
+        badge.src = `icons/badges/tiktok-not-follower.svg`; // custom icon
+        badge.classList.add("badge");
+        badgeListDiv.appendChild(badge);
+    }
+}
 
 	// Render avatars
 	if (showAvatar) {
@@ -2805,6 +2815,9 @@ function TikTokGift(data) {
 	// Streak ended or non-streakable gift => process the gift with final repeat_count
 	console.debug(`${data.uniqueId} has sent gift ${data.giftName} x${data.repeatCount}`);
 
+	// Calculate diamond value
+	const totalDiamonds = data.diamondCount * data.repeatCount;
+
 	// Get a reference to the template
 	const template = document.getElementById('tiktok-gift-template');
 
@@ -2817,13 +2830,15 @@ function TikTokGift(data) {
 	const giftNameSpan = instance.querySelector('#tiktok-gift-name');
 	const stickerImg = instance.querySelector('.tiktok-gift-sticker');
 	const repeatCountDiv = instance.querySelector('#tiktok-gift-repeat-count');
+	const giftValueDiv = instance.querySelector('#tiktok-gift-value'); // <-- add this in your template
 
-	avatarImg.src = data.profilePictureUrl;				// Set the card header
-	usernameSpan.innerText = data.nickname;				// Set the username
-	giftNameSpan.innerText = data.giftName;				// Set the gift name
-	stickerImg.src = data.giftPictureUrl;				// Set the sticker image URL
-	repeatCountDiv.innerText = `x${data.repeatCount}`;	// Set the number of gifts sent
-
+	// Fill content
+	avatarImg.src = data.profilePictureUrl;				
+	usernameSpan.innerText = data.nickname;				
+	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount}💎)`;				
+	stickerImg.src = data.giftPictureUrl;				
+	repeatCountDiv.innerText = `x${data.repeatCount}`;	
+	
 	AddMessageItem(instance, data.msgId, 'tiktok', data.userId);
 }
 
