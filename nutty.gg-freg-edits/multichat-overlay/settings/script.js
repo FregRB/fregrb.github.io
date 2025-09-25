@@ -1,6 +1,6 @@
 const widgetContainer = document.getElementById('widgetContainer');
 
-const settingsPageURL = '../../.utilities/settings-page-builder';
+const settingsPageURL = 'https://fregrb.github.io/nutty.gg-freg-edits/utilities/settings-page-builder';
 
 const currentURL = window.location.href;
 
