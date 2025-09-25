@@ -114,13 +114,12 @@ li {
 
 /* Dynamic bubble sizing */
 .bubble {
-    background: var(--bubble-color) !important;
-    padding: 0.3em 0.9em 0.3em 0.7em; /* top, right, bottom, left */
-    border-radius: var(--border-radius);
-    display: inline-block;           /* shrink to fit content */
-    max-width: 80%;                  /* limits bubble width to 80% of container */
-    word-wrap: normal;               /* don’t break words in half */
-    overflow-wrap: anywhere;         /* move long words to next line */
+	background: var(--bubble-color) !important;
+	padding: 0.3em 0.9em 0.3em 0.7em; /* top, right, bottom, left */
+	border-radius: var(--border-radius);
+	display: inline-block;
+	max-width: 3000vw;
+	word-wrap: break-word;
 }
 
 
