@@ -101,9 +101,10 @@ let hexOpacity = opacity255.toString(16);
 if (hexOpacity.length < 2) {
 	hexOpacity = "0" + hexOpacity;
 }
-document.body.style.background = `${background}${hexOpacity}`;
-document.body.style.borderRadius = "20px";
-document.body.style.overflow = "hidden";
+const wrapper = document.getElementById("backgroundWrapper");
+wrapper.style.background = `${background}${hexOpacity}`;
+wrapper.style.borderRadius = "20px";
+wrapper.style.overflow = "hidden"; // clip children to rounded edges
 
 // Get a list of chatters to ignore
 const ignoreUserList = ignoreChatters.split(',').map(item => item.trim().toLowerCase()) || [];
