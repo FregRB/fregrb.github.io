@@ -112,14 +112,14 @@ li {
 	align-items: flex-start;
 }
 
-/* Dynamic bubble sizing */
 .bubble {
-	background: var(--bubble-color) !important;
-	padding: 0.3em 0.9em 0.3em 0.7em; /* top, right, bottom, left */
-	border-radius: var(--border-radius);
-	display: inline-block;
-	max-width: 3000vw;
-	word-wrap: break-word;
+    background: var(--bubble-color) !important;
+    padding: 0.3em 0.9em 0.3em 0.7em;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    max-width: 80%;               /* or whatever fits your container */
+    word-break: normal;           /* do not forcibly break words */
+    overflow-wrap: anywhere;      /* allow long words to move to the next line */
 }
 
 
