@@ -102,6 +102,8 @@ if (hexOpacity.length < 2) {
 	hexOpacity = "0" + hexOpacity;
 }
 document.body.style.background = `${background}${hexOpacity}`;
+document.body.style.borderRadius = "20px";
+document.body.style.overflow = "hidden";
 
 // Get a list of chatters to ignore
 const ignoreUserList = ignoreChatters.split(',').map(item => item.trim().toLowerCase()) || [];
@@ -2592,6 +2594,17 @@ async function TikTokChat(data) {
 	const pronounsDiv = instance.querySelector("#pronouns");
 	const usernameDiv = instance.querySelector("#username");
 	const messageDiv = instance.querySelector("#message");
+
+	// Render bubbles
+	if (useChatBubbles) {
+		const opacity255 = Math.round(parseFloat(bubbleOpacity) * 255);
+		let hexOpacity = opacity255.toString(16);
+		if (hexOpacity.length < 2) {
+			hexOpacity = "0" + hexOpacity;
+		}
+		document.documentElement.style.setProperty('--bubble-color', `${bubbleColor}${hexOpacity}`);
+		messageContainerDiv.classList.add("bubble");
+	}
 
 // 15-color palette (from your CSS)
 const twitchColors = [
