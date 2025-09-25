@@ -221,9 +221,15 @@ li {
 	font-weight: 700;
 	line-height: var(--line-spacing);
 	margin-top: 0.15em; /* controls space above message */
-	overflow-wrap: break-word;
-    word-wrap: break-word;
-    word-break: break-all;
+    overflow-wrap: anywhere;  /* allows breaking to next line only if necessary */
+    word-wrap: normal;        /* legacy support */
+    word-break: normal;       /* don't break words in half */
+}
+
+#message {
+    font-weight: 700;
+    line-height: var(--line-spacing);
+
 }
 
 #card {
