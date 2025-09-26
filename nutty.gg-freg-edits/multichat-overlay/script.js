@@ -2654,38 +2654,44 @@ if (showUsername) {
 		platformDiv.innerHTML = platformElements;
 	}
 
-// Render badges
-if (showBadges) {
-    badgeListDiv.innerHTML = "";
+	// Render badges
+	if (showBadges) {
+		badgeListDiv.innerHTML = "";
 
-    // Moderator badge
-    if (data.isModerator) {
-        const badge = new Image();
-        badge.src = `icons/badges/youtube-moderator.svg`;
-        badge.style.filter = `invert(100%)`;
-        badge.style.opacity = 0.8;
-        badge.classList.add("badge");
-        badgeListDiv.appendChild(badge);
-    }
+		// Moderator emoji
+		if (data.isModerator) {
+			const modBadge = document.createElement("span");
+			modBadge.innerText = "⚔️"; 
+			modBadge.classList.add("emoji-badge");
+			badgeListDiv.appendChild(modBadge);
+		}
 
-    // User badges
-    for (let i in data.userBadges) {
-        if (data.userBadges[i].type === 'image') {
-            const badge = new Image();
-            badge.src = data.userBadges[i].url;
-            badge.classList.add("badge");
-            badgeListDiv.appendChild(badge);
-        }
-    }
+		// Subscriber banner (TikTok style)
+		if (data.isSubscriber) {
+			const subscriberBanner = document.createElement("span");
+			subscriberBanner.classList.add("subscriber-banner");
+			subscriberBanner.innerText = data.subscriberName || data.nickname; // fallback to username
+			badgeListDiv.appendChild(subscriberBanner);
+		}
 
-    // "Not following" badge
-    if (typeof data.isFollower !== "undefined" && !data.isFollower) {
-        const badge = new Image();
-        badge.src = `icons/badges/tiktok-not-follower.svg`; // custom icon
-        badge.classList.add("badge");
-        badgeListDiv.appendChild(badge);
-    }
-}
+		// User image badges
+		for (let i in data.userBadges) {
+			if (data.userBadges[i].type === 'image') {
+				const badge = new Image();
+				badge.src = data.userBadges[i].url;
+				badge.classList.add("badge");
+				badgeListDiv.appendChild(badge);
+			}
+		}
+
+		// Not following badge
+		if (typeof data.isFollower !== "undefined" && !data.isFollower) {
+			const notFollowerBadge = document.createElement("span");
+			notFollowerBadge.innerText = "☘️";  
+			notFollowerBadge.classList.add("emoji-badge");
+			badgeListDiv.appendChild(notFollowerBadge);
+		}
+	}
 
 	// Render avatars
 	if (showAvatar) {
