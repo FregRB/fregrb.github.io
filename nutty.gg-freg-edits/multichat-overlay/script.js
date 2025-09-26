@@ -2654,6 +2654,9 @@ if (showUsername) {
 		platformDiv.innerHTML = platformElements;
 	}
 
+	// Example: pull the option value (depends on how your settings system works)
+	const subscriberBannerText = settings.subscriberBannerText || "SUB";
+
 	// Render badges
 	if (showBadges) {
 		badgeListDiv.innerHTML = "";
@@ -2661,7 +2664,7 @@ if (showUsername) {
 		// Moderator emoji
 		if (data.isModerator) {
 			const modBadge = document.createElement("span");
-			modBadge.innerText = "⚔️"; 
+			modBadge.innerText = "⚔️";
 			modBadge.classList.add("emoji-badge");
 			badgeListDiv.appendChild(modBadge);
 		}
@@ -2670,24 +2673,26 @@ if (showUsername) {
 		if (data.isSubscriber) {
 			const subscriberBanner = document.createElement("span");
 			subscriberBanner.classList.add("subscriber-banner");
-			subscriberBanner.innerText = data.subscriberName || data.nickname; // fallback to username
+			subscriberBanner.innerText = subscriberBannerText; 
 			badgeListDiv.appendChild(subscriberBanner);
 		}
 
 		// User image badges
-		for (let i in data.userBadges) {
-			if (data.userBadges[i].type === 'image') {
-				const badge = new Image();
-				badge.src = data.userBadges[i].url;
-				badge.classList.add("badge");
-				badgeListDiv.appendChild(badge);
+		if (Array.isArray(data.userBadges)) {
+			for (let i in data.userBadges) {
+				if (data.userBadges[i].type === 'image') {
+					const badge = new Image();
+					badge.src = data.userBadges[i].url;
+					badge.classList.add("badge");
+					badgeListDiv.appendChild(badge);
+				}
 			}
 		}
 
 		// Not following badge
 		if (typeof data.isFollower !== "undefined" && !data.isFollower) {
 			const notFollowerBadge = document.createElement("span");
-			notFollowerBadge.innerText = "☘️";  
+			notFollowerBadge.innerText = "☘️";
 			notFollowerBadge.classList.add("emoji-badge");
 			badgeListDiv.appendChild(notFollowerBadge);
 		}
@@ -2841,7 +2846,7 @@ function TikTokGift(data) {
 	// Fill content
 	avatarImg.src = data.profilePictureUrl;				
 	usernameSpan.innerText = data.nickname;				
-	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount}💵)`;				
+	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount} Coins)`;				
 	stickerImg.src = data.giftPictureUrl;				
 	repeatCountDiv.innerText = `x${data.repeatCount}`;	
 	
