@@ -2841,7 +2841,7 @@ function TikTokGift(data) {
 	// Fill content
 	avatarImg.src = data.profilePictureUrl;				
 	usernameSpan.innerText = data.nickname;				
-	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount}💎)`;				
+	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount}💵)`;				
 	stickerImg.src = data.giftPictureUrl;				
 	repeatCountDiv.innerText = `x${data.repeatCount}`;	
 	
