@@ -73,7 +73,6 @@ const showTikTokLikes = GetBooleanParam("showTikTokLikes", false);
 const showTikTokMessages = GetBooleanParam("showTikTokMessages", false);
 const showTikTokGifts = GetBooleanParam("showTikTokGifts", false);
 const showTikTokSubs = GetBooleanParam("showTikTokSubs", false);
-const subscriberBannerText = urlParams.get("subscriberBannerText") || "SUB";
 
 const showStreamlabsDonations = GetBooleanParam("showStreamlabsDonations", true)
 const showStreamElementsTips = GetBooleanParam("showStreamElementsTips", true);
@@ -2655,49 +2654,38 @@ if (showUsername) {
 		platformDiv.innerHTML = platformElements;
 	}
 
-	// Example: pull the option value (depends on how your settings system works)
-	const subscriberBannerText = settings.subscriberBannerText || "SUB";
+// Render badges
+if (showBadges) {
+    badgeListDiv.innerHTML = "";
 
-	// Render badges
-	if (showBadges) {
-		badgeListDiv.innerHTML = "";
+    // Moderator badge
+    if (data.isModerator) {
+        const badge = new Image();
+        badge.src = `icons/badges/youtube-moderator.svg`;
+        badge.style.filter = `invert(100%)`;
+        badge.style.opacity = 0.8;
+        badge.classList.add("badge");
+        badgeListDiv.appendChild(badge);
+    }
 
-		// Moderator emoji
-		if (data.isModerator) {
-			const modBadge = document.createElement("span");
-			modBadge.innerText = "⚔️";
-			modBadge.classList.add("emoji-badge");
-			badgeListDiv.appendChild(modBadge);
-		}
+    // User badges
+    for (let i in data.userBadges) {
+        if (data.userBadges[i].type === 'image') {
+            const badge = new Image();
+            badge.src = data.userBadges[i].url;
+            badge.classList.add("badge");
+            badgeListDiv.appendChild(badge);
+        }
+    }
 
-		// Subscriber banner (TikTok style)
-		if (data.isSubscriber) {
-			const subscriberBanner = document.createElement("span");
-			subscriberBanner.classList.add("subscriber-banner");
-			subscriberBanner.innerText = subscriberBannerText; 
-			badgeListDiv.appendChild(subscriberBanner);
-		}
-
-		// User image badges
-		if (Array.isArray(data.userBadges)) {
-			for (let i in data.userBadges) {
-				if (data.userBadges[i].type === 'image') {
-					const badge = new Image();
-					badge.src = data.userBadges[i].url;
-					badge.classList.add("badge");
-					badgeListDiv.appendChild(badge);
-				}
-			}
-		}
-
-		// Not following badge
-		if (typeof data.isFollower !== "undefined" && !data.isFollower) {
-			const notFollowerBadge = document.createElement("span");
-			notFollowerBadge.innerText = "☘️";
-			notFollowerBadge.classList.add("emoji-badge");
-			badgeListDiv.appendChild(notFollowerBadge);
-		}
-	}
+    // "Not following" badge
+    if (typeof data.isFollower !== "undefined" && !data.isFollower) {
+        const badge = new Image();
+        badge.src = `icons/badges/tiktok-not-follower.svg`; // custom icon
+        badge.classList.add("badge");
+        badgeListDiv.appendChild(badge);
+    }
+}
 
 	// Render avatars
 	if (showAvatar) {
@@ -2847,7 +2835,7 @@ function TikTokGift(data) {
 	// Fill content
 	avatarImg.src = data.profilePictureUrl;				
 	usernameSpan.innerText = data.nickname;				
-	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount} Coins)`;				
+	giftNameSpan.innerText = `${data.giftName} (${data.diamondCount}💎)`;				
 	stickerImg.src = data.giftPictureUrl;				
 	repeatCountDiv.innerText = `x${data.repeatCount}`;	
 	

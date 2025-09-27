@@ -193,14 +193,6 @@
 			"group": "General"
 		},
 		{
-			"id": "subscriberBannerText",
-			"label": "Subscriber Banner Text",
-			"description": "Text to display inside the TikTok-style subscriber banner",
-			"type": "text",
-			"defaultValue": "SUB",
-			"group": "General"
-		},
-		{
 			"id": "imageEmbedPermissionLevel",
 			"label": "Embed Images",
 			"description": "Automatically embed images for these users",

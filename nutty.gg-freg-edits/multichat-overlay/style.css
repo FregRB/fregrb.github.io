@@ -349,24 +349,6 @@ li {
 .blank {
 	background: #adadad00 !important;
 }
-/* Emoji badges */
-.emoji-badge {
-    font-size: 1em;
-    margin: 0 2px;
-}
-
-/* TikTok subscriber banner style */
-.subscriber-banner {
-    display: inline-block;
-    background-color: #FF7F50; /* TikTok-like orange */
-    color: white;
-    font-weight: bold;
-    padding: 0.1em 0.5em;
-    border-radius: 999px; /* full pill shape */
-    font-size: 0.8em;
-    line-height: 1em;
-    white-space: nowrap;
-}
 
 /* ================= */
 /* ANIMATIONS        */
