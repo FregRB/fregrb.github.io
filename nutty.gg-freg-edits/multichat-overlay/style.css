@@ -246,7 +246,7 @@ li {
 	padding: 0.5em 1em;
 	border-radius: var(--border-radius);
 	max-width: 100%;
-	background: linear-gradient(#58585840, #22222240) !important;
+	background: linear-gradient(#6d5ca1, #9146ff) !important;
 }
 
 .tiktok-gift-avatar {
